@@ -469,7 +469,7 @@
       {
         "file": "Rectangle 65.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"Rectangle 65.png\",\"extension\":\".png\"}",
         "name": "Rectangle 65.png",
         "smoothed": true,
         "userAdded": false
@@ -799,6 +799,130 @@
         "kind": "image",
         "metadata": "",
         "name": "Group (3).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Level.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Level.png\"}",
+        "name": "Level",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 591.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 591.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 591 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 591 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "main menu bgm - ingat aku.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "main menu bgm - ingat aku.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "button setting - ingat aku.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "button setting - ingat aku.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "pencet jawaban - ingat aku.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "pencet jawaban - ingat aku.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "button mulai - ingat aku.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "button mulai - ingat aku.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "x button di setting - ingat aku.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "x button di setting - ingat aku.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "pencet level - ingat aku.wav.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "pencet level - ingat aku.wav.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 587.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 587.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -1506,72 +1630,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Gelap",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1280,
-                        "y": 0
-                      },
-                      {
-                        "x": 1280,
-                        "y": 720
-                      },
-                      {
-                        "x": 0,
-                        "y": 720
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "KetukManaAja",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1602,121 +1660,6 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "NewSprite2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1280,
-                        "y": 0
-                      },
-                      {
-                        "x": 1280,
-                        "y": 720
-                      },
-                      {
-                        "x": 0,
-                        "y": 720
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Transisi",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite4",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1280,
-                        "y": 0
-                      },
-                      {
-                        "x": 1280,
-                        "y": 720
-                      },
-                      {
-                        "x": 0,
-                        "y": 720
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Transisi",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Transisi",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2035,6 +1978,40 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Transition",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter",
+          "Progress": 0,
+          "Duration": 0,
+          "Type": "",
+          "Direction": "",
+          "MaxOpacity": 255
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none",
+      "fillColor": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "outlineColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2061,13 +2038,10 @@
         ]
       },
       {
-        "objectName": "Gelap"
-      },
-      {
         "objectName": "KetukManaAja"
       },
       {
-        "objectName": "Transisi"
+        "objectName": "Transition"
       },
       {
         "objectName": "Oca"
@@ -2109,11 +2083,11 @@
           "children": [
             {
               "type": "number",
-              "value": 0
+              "value": 50
             },
             {
               "type": "number",
-              "value": 0
+              "value": 50
             }
           ]
         }
@@ -2193,24 +2167,8 @@
           "persistentUuid": "6f93e8d3-c3d2-4970-842e-8941d465ad76",
           "width": 0,
           "x": 0,
-          "y": 0,
+          "y": 1,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 90,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Air",
-          "persistentUuid": "c44b335d-5f4d-4573-843e-7563e4dbe584",
-          "width": 0,
-          "x": 215,
-          "y": 994,
-          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2221,9 +2179,25 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Transisi",
-          "persistentUuid": "4671fcb3-c541-4dcb-b3a8-94f7ba2f09a2",
+          "name": "Isi",
+          "persistentUuid": "c44b335d-5f4d-4573-843e-7563e4dbe584",
           "width": 0,
+          "x": 0,
+          "y": 635,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "",
+          "name": "Transition",
+          "persistentUuid": "0c433255-6dfc-4865-89cf-567858e279b2",
+          "width": 1280,
           "x": 0,
           "y": 0,
           "zOrder": 3,
@@ -2308,7 +2282,7 @@
               "name": "AutoTyping",
               "type": "AutoTyping::AutoTyping",
               "Text": "Text",
-              "Interval": 0.5,
+              "Interval": 0.4,
               "CharacterJustAdded": false,
               "FullText": "",
               "TypedText": ""
@@ -2349,7 +2323,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Air",
+          "name": "Isi",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -2362,16 +2336,17 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Level",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Rectangle 65.png",
+                      "image": "Level",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2391,16 +2366,163 @@
                             "y": 0
                           },
                           {
-                            "x": 861,
+                            "x": 1280,
                             "y": 0
                           },
                           {
-                            "x": 861,
-                            "y": 449
+                            "x": 1280,
+                            "y": 720
                           },
                           {
                             "x": 0,
-                            "y": 449
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "1",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
                           }
                         ]
                       ]
@@ -2422,11 +2544,18 @@
             "objectName": "Memuat"
           },
           {
-            "objectName": "Air"
+            "objectName": "Isi"
           }
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2437,52 +2566,310 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-              },
-              "parameters": [
-                "Transisi",
-                "Tween",
-                "\"Transisi\"",
-                "0",
-                "\"linear\"",
-                "1",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"SelectLevel\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Animation",
+                    "=",
+                    "\"Level\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"200;191;247\"",
+                    "1",
+                    "\"Flash\"",
+                    "\"Backward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "TransisiKe___"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Tween",
+                    "\"Loading\"",
+                    "90",
+                    "\"linear\"",
+                    "4",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.25"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"Level1 (Pengenalan)\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Animation",
+                    "=",
+                    "\"1\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"200;191;247\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Backward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "TransisiKe___"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Tween",
+                    "\"Loading\"",
+                    "90",
+                    "\"linear\"",
+                    "4",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "PrioritizeLoadingOfScene"
-              },
-              "parameters": [
-                "TransisiKe___",
-                "TransisiKe___"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"Level2 (Pengenalan)\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Animation",
+                    "=",
+                    "\"2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"204;235;173\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Backward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "TransisiKe___"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Tween",
+                    "\"Loading\"",
+                    "90",
+                    "\"linear\"",
+                    "4",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-              },
-              "parameters": [
-                "Air",
-                "Tween",
-                "\"Loading\"",
-                "215",
-                "\"linear\"",
-                "5",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"Level3 (Pengenalan)\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Animation",
+                    "=",
+                    "\"3\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"253;193;172\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Backward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "TransisiKe___"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Tween",
+                    "\"Loading\"",
+                    "90",
+                    "\"linear\"",
+                    "4",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -2495,7 +2882,7 @@
                 "value": "Tween::HasFinished"
               },
               "parameters": [
-                "Air",
+                "Isi",
                 "Tween",
                 "\"Loading\""
               ]
@@ -2658,6 +3045,10 @@
           "type": "EffectCapability::EffectBehavior"
         },
         {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
+        },
+        {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
         },
@@ -2703,7 +3094,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.32717687331421824,
+        "zoomFactor": 0.4558407784909826,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -2864,22 +3255,6 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Transition",
-          "name": "Transisi",
-          "persistentUuid": "72a14af5-f972-4b1b-abc5-cd61c6e65505",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Slider_Music",
           "persistentUuid": "bc92d0ec-bb62-4a38-b781-641bc3591da6",
@@ -2951,6 +3326,22 @@
           "x": 1025,
           "y": -585,
           "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Transition",
+          "persistentUuid": "8fbee45d-721d-4a08-8013-b4e803dfa0da",
+          "width": 0,
+          "x": 790,
+          "y": 482,
+          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3222,7 +3613,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "Background",
-          "texture": "Group 586.png",
+          "texture": "Group 591 1.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -3345,6 +3736,13 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -3366,9 +3764,43 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "main menu bgm - ingat aku.wav",
+                "1",
+                "yes",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+              },
+              "parameters": [
+                "Transition",
+                "FlashTransitionPainter",
+                "\"255;242;221\"",
+                "1",
+                "\"Flash\"",
+                "\"Backward\"",
+                "",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "EnableLayerEffect"
@@ -3389,20 +3821,6 @@
                 "",
                 "\"Blurr\"",
                 "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-              },
-              "parameters": [
-                "Transisi",
-                "Tween",
-                "\"Transisi_awal\"",
-                "0",
-                "\"linear\"",
-                "1",
-                ""
               ]
             }
           ]
@@ -3556,56 +3974,22 @@
                     "ButtonFSM",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "SetStringVariable"
+                    "value": "PlaySoundCanal"
                   },
                   "parameters": [
-                    "TransisiKe___",
-                    "=",
-                    "\"SelectLevel\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                  },
-                  "parameters": [
-                    "Transisi",
-                    "Tween",
-                    "\"Transisi\"",
-                    "255",
-                    "\"linear\"",
+                    "",
+                    "button mulai - ingat aku.wav",
                     "1",
+                    "",
+                    "",
                     ""
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Tween::IsPlaying"
-                  },
-                  "parameters": [
-                    "Transisi",
-                    "Tween",
-                    "\"Transisi\""
-                  ]
-                }
-              ],
-              "actions": [
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -3625,30 +4009,22 @@
                     "ButtonFSM",
                     ""
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "Transisi",
-                    "Tween",
-                    "\"Transisi\""
-                  ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
                   },
-                  "parameters": []
-                }
-              ],
-              "actions": [
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"255;242;221\"",
+                    "1",
+                    "\"Flash\"",
+                    "\"Forward\"",
+                    "",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Wait"
@@ -3663,7 +4039,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"LoadingScene\"",
+                    "\"SelectLevel\"",
                     ""
                   ]
                 }
@@ -3677,7 +4053,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Setting",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3703,6 +4078,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "button setting - ingat aku.wav",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -3892,24 +4280,15 @@
               "actions": [
                 {
                   "type": {
-                    "value": "EnableLayerEffect"
+                    "value": "PlaySoundCanal"
                   },
                   "parameters": [
                     "",
-                    "",
-                    "\"Gelap\"",
-                    "no"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "EnableLayerEffect"
-                  },
-                  "parameters": [
+                    "x button di setting - ingat aku.wav",
+                    "1",
                     "",
                     "",
-                    "\"Blurr\"",
-                    "no"
+                    ""
                   ]
                 },
                 {
@@ -4009,6 +4388,28 @@
                     "SettingButton_Clicked",
                     "Toggle",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EnableLayerEffect"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "\"Gelap\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EnableLayerEffect"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "\"Blurr\"",
+                    "no"
                   ]
                 }
               ]
@@ -4203,11 +4604,11 @@
               "effectType": "KawaseBlur",
               "name": "Blurr",
               "doubleParameters": {
-                "blur": 0,
+                "blur": 3,
                 "padding": 0,
-                "pixelizeX": 0,
-                "pixelizeY": 0,
-                "quality": 0
+                "pixelizeX": 1,
+                "pixelizeY": 1,
+                "quality": 3
               },
               "stringParameters": {},
               "booleanParameters": {}
@@ -4216,7 +4617,7 @@
               "effectType": "Brightness",
               "name": "Gelap",
               "doubleParameters": {
-                "brightness": 0
+                "brightness": 0.25
               },
               "stringParameters": {},
               "booleanParameters": {}
@@ -4356,6 +4757,10 @@
           "type": "EllipseMovement::EllipseMovement"
         },
         {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
+        },
+        {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
         },
@@ -4388,7 +4793,7 @@
       "name": "SelectLevel",
       "r": 255,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 242,
       "uiSettings": {
@@ -4421,7 +4826,13 @@
           ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "Transitions",
+          "type": "string",
+          "value": ""
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -4473,22 +4884,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "Transisi",
-          "name": "Transisi",
-          "persistentUuid": "4ab8f789-8acd-4172-bdfb-d03fb6a74ecc",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 1,
           "height": 720,
@@ -4498,7 +4893,39 @@
           "width": 1280,
           "x": 0,
           "y": 0,
-          "zOrder": 5,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Button_Setting",
+          "persistentUuid": "64b48f06-2609-4415-8e4a-e1bc66ec3531",
+          "width": 0,
+          "x": 1170,
+          "y": 10,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Button_Back",
+          "persistentUuid": "c37f5f01-d914-4dfb-a43a-4fbec5b9154b",
+          "width": 0,
+          "x": 10,
+          "y": 620,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4776,38 +5203,94 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Transition",
-          "type": "PrimitiveDrawing::Drawer",
+          "name": "Button_Back",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
           "behaviors": [
             {
-              "name": "FlashTransitionPainter",
-              "type": "FlashTransitionPainter::FlashTransitionPainter",
-              "Progress": 0,
-              "Duration": 0,
-              "Type": "",
-              "Direction": "",
-              "MaxOpacity": 255
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1.05,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
-          "fillOpacity": 255,
-          "outlineSize": 1,
-          "outlineOpacity": 255,
-          "absoluteCoordinates": false,
-          "clearBetweenFrames": true,
-          "antialiasing": "none",
-          "fillColor": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          },
-          "outlineColor": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          }
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 587.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 4,
+                            "y": 0
+                          },
+                          {
+                            "x": 101,
+                            "y": 0
+                          },
+                          {
+                            "x": 101,
+                            "y": 80
+                          },
+                          {
+                            "x": 4,
+                            "y": 80
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -4823,11 +5306,18 @@
             "objectName": "Level3"
           },
           {
-            "objectName": "Transition"
+            "objectName": "Button_Back"
           }
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
         {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
@@ -4854,25 +5344,34 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                "value": "SetBooleanVariable"
               },
               "parameters": [
-                "Transisi",
-                "Animation",
-                "+",
-                "1"
+                "Level[0]",
+                "True",
+                ""
               ]
             },
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                "value": "SetBooleanVariable"
               },
               "parameters": [
-                "Transisi",
+                "Level[1]",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Level3",
                 "Tween",
-                "\"Transisi\"",
-                "0",
-                "\"linear\"",
+                "\"Masuk\"",
+                "485",
+                "\"easeOutQuad\"",
                 "1",
                 ""
               ]
@@ -5025,43 +5524,6 @@
                     ""
                   ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Tween::HasFinished"
-              },
-              "parameters": [
-                "Transisi",
-                "Tween",
-                "\"Transisi\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-              },
-              "parameters": [
-                "Level3",
-                "Tween",
-                "\"Masuk\"",
-                "485",
-                "\"easeOutQuad\"",
-                "1",
-                ""
               ]
             }
           ]
@@ -5301,10 +5763,144 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Animasi Button Level",
+          "name": "Button",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 235,
+                "g": 228,
+                "r": 172,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Back     "
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Button_Back",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "x button di setting - ingat aku.wav",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"255;242;221\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Forward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Transitions",
+                    "=",
+                    "\"Kembali\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffectIsEnd"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Transitions",
+                    "=",
+                    "\"Kembali\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"Level1 (Pengenalan)\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"HomePage\"",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
@@ -5340,6 +5936,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "pencet level - ingat aku.wav.wav",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -5355,7 +5964,7 @@
                   "parameters": [
                     "Level3",
                     "Tween",
-                    "\"Keluar\"",
+                    "\"Keluar1\"",
                     "735",
                     "\"easeOutQuad\"",
                     "1",
@@ -5377,7 +5986,7 @@
                   "parameters": [
                     "Level2",
                     "Tween",
-                    "\"Keluar\"",
+                    "\"Keluar1\"",
                     "735",
                     "\"easeOutQuad\"",
                     "1",
@@ -5396,7 +6005,7 @@
                   "parameters": [
                     "Level2",
                     "Tween",
-                    "\"Keluar\""
+                    "\"Keluar1\""
                   ]
                 },
                 {
@@ -5414,7 +6023,7 @@
                   "parameters": [
                     "Level1",
                     "Tween",
-                    "\"Geser\"",
+                    "\"Geser1\"",
                     "255",
                     "\"easeOutQuad\"",
                     "1",
@@ -5433,7 +6042,7 @@
                   "parameters": [
                     "Level1",
                     "Tween",
-                    "\"Geser\""
+                    "\"Geser1\""
                   ]
                 },
                 {
@@ -5472,6 +6081,16 @@
                     "Transition",
                     "FlashTransitionPainter",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Level1",
+                    "Tween",
+                    "\"Geser1\""
                   ]
                 }
               ],
@@ -5533,12 +6152,161 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "pencet level - ingat aku.wav.wav",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Level3",
+                    "Tween",
+                    "\"Keluar2\"",
+                    "735",
+                    "\"easeOutQuad\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Level3",
+                    "Tween",
+                    "\"Keluar2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Level1",
+                    "Tween",
+                    "\"Geser2\"",
+                    "-235",
+                    "\"easeOutQuad\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Level1",
+                    "Tween",
+                    "\"Geser2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"204;235;173\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Forward\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffectIsEnd"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Level1",
+                    "Tween",
+                    "\"Geser2\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
                     "TransisiKe___",
                     "=",
-                    "\"Level2\""
+                    "\"Level3 (Pengenalan)\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LoadingScene\"",
+                    ""
                   ]
                 }
               ]
@@ -5578,12 +6346,183 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "pencet level - ingat aku.wav.wav",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Level1",
+                    "Tween",
+                    "\"Keluar3\"",
+                    "-235",
+                    "\"easeOutQuad\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Level2",
+                    "Tween",
+                    "\"Keluar3\"",
+                    "-235",
+                    "\"easeOutQuad\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Level2",
+                    "Tween",
+                    "\"Keluar3\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Level3",
+                    "Tween",
+                    "\"Geser3\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Level3",
+                    "Tween",
+                    "\"Geser3\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"253;193;172\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Forward\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffectIsEnd"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Level3",
+                    "Tween",
+                    "\"Geser3\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
                     "TransisiKe___",
                     "=",
-                    "\"Level3\""
+                    "\"Level3 (Pengenalan)\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LoadingScene\"",
+                    ""
                   ]
                 }
               ]
@@ -5935,22 +6874,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "Bayangan",
-          "name": "Gelap",
-          "persistentUuid": "b9413f06-2f93-40e1-92a0-674fbd7dea9b",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 0,
           "height": 720,
@@ -6045,6 +6968,22 @@
           "x": 78,
           "y": 568,
           "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "Bayangan",
+          "name": "Transition",
+          "persistentUuid": "b1d61beb-1b69-463b-9be0-361eeebea3f9",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6470,6 +7409,13 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6484,15 +7430,16 @@
           "actions": [
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
               },
               "parameters": [
-                "Gelap",
-                "Tween",
-                "\"Transisi_Awal\"",
-                "0",
-                "\"linear\"",
-                "1",
+                "Transition",
+                "FlashTransitionPainter",
+                "\"200;191;247\"",
+                "1.5",
+                "\"Flash\"",
+                "\"Backward\"",
+                "",
                 ""
               ]
             },
@@ -8082,15 +9029,16 @@
           "actions": [
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
               },
               "parameters": [
-                "Gelap",
-                "Tween",
-                "\"Transisi_Akhir\"",
-                "255",
-                "\"linear\"",
+                "Transition",
+                "FlashTransitionPainter",
+                "\"200;191;247\"",
                 "1",
+                "\"Circular\"",
+                "\"Forward\"",
+                "",
                 ""
               ]
             }
@@ -8101,12 +9049,22 @@
           "conditions": [
             {
               "type": {
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffectIsEnd"
+              },
+              "parameters": [
+                "Transition",
+                "FlashTransitionPainter",
+                "\"Transisi_Akhir\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Tween::HasFinished"
               },
               "parameters": [
-                "Gelap",
+                "Hani",
                 "Tween",
-                "\"Transisi_Akhir\""
+                "\"Selesai_Pengenalan\""
               ]
             },
             {
@@ -8324,6 +9282,10 @@
           "type": "EffectCapability::EffectBehavior"
         },
         {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
+        },
+        {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
         },
@@ -8369,7 +9331,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.49508400737488867,
+        "zoomFactor": 0.678656268119812,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -8659,22 +9621,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "Warna",
-          "name": "Gelap",
-          "persistentUuid": "af60c081-7acf-4aab-97ce-a2064c440f5c",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 1,
           "height": 109,
@@ -8823,6 +9769,39 @@
           "x": 0,
           "y": 0,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "",
+          "name": "Transition",
+          "persistentUuid": "244eac25-db96-4a01-aea1-4412a87a07bc",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Warna",
+          "name": "Gelap",
+          "opacity": 0,
+          "persistentUuid": "87373d47-70cf-474d-9ca9-57678df7ca2c",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10160,6 +11139,72 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Gelap",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -10209,10 +11254,20 @@
           },
           {
             "objectName": "Flash_Salah"
+          },
+          {
+            "objectName": "Gelap"
           }
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -10228,15 +11283,16 @@
           "actions": [
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
               },
               "parameters": [
-                "Gelap",
-                "Tween",
-                "\"Transisi_Awal\"",
-                "0",
-                "\"linear\"",
+                "Transition",
+                "FlashTransitionPainter",
+                "\"255;255;255\"",
                 "1",
+                "\"Flash\"",
+                "\"Backward\"",
+                "",
                 ""
               ]
             },
@@ -10299,11 +11355,11 @@
           "conditions": [
             {
               "type": {
-                "value": "Tween::HasFinished"
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffectIsEnd"
               },
               "parameters": [
-                "Gelap",
-                "Tween",
+                "Transition",
+                "FlashTransitionPainter",
                 "\"Transisi_Awal\""
               ]
             },
@@ -14418,7 +15474,7 @@
           "isLocked": false,
           "name": "Warna",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -14481,6 +15537,10 @@
           "type": "EffectCapability::EffectBehavior"
         },
         {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
+        },
+        {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
         },
@@ -14532,12 +15592,42 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "",
+          "name": "Transition",
+          "persistentUuid": "6a1c136a-e679-429b-bd83-c87b9ffde213",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [],
       "objectsFolderStructure": {
         "folderName": "__ROOT"
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -14624,6 +15714,10 @@
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
         },
         {
           "name": "Flippable",
@@ -14677,12 +15771,42 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "",
+          "name": "Transition",
+          "persistentUuid": "7ebfe838-63bc-4240-81b6-c64bb6e0f874",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [],
       "objectsFolderStructure": {
         "folderName": "__ROOT"
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -14769,6 +15893,10 @@
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
         },
         {
           "name": "Flippable",
@@ -14822,12 +15950,42 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "",
+          "name": "Transition",
+          "persistentUuid": "b338592e-2cd3-4d57-ac9b-dc9c5a5379a7",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [],
       "objectsFolderStructure": {
         "folderName": "__ROOT"
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -14914,6 +16072,10 @@
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
         },
         {
           "name": "Flippable",
@@ -14967,12 +16129,42 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "",
+          "name": "Transition",
+          "persistentUuid": "1b85355e-d6a4-4844-a57f-6e1d8b68bb93",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [],
       "objectsFolderStructure": {
         "folderName": "__ROOT"
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -15059,6 +16251,10 @@
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
         },
         {
           "name": "Flippable",
@@ -15265,6 +16461,10 @@
           "type": "EffectCapability::EffectBehavior"
         },
         {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
+        },
+        {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
         },
@@ -15335,7 +16535,7 @@
                   },
                   "parameters": [
                     "temp",
-                    "GameStorage.Settings"
+                    "GameStorage"
                   ]
                 },
                 {
@@ -15395,19 +16595,6 @@
                     "\"SavingSystemLevel\"",
                     "ToJSON(GameStorage)"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "",
-                    "2",
-                    "",
-                    "",
-                    ""
-                  ]
                 }
               ]
             },
@@ -15425,19 +16612,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "",
-                    "2",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "value": "SetNumberVariable"

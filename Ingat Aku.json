@@ -965,14 +965,6 @@
         "userAdded": false
       },
       {
-        "file": "Group 611.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 611.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "Group 609.png",
         "kind": "image",
         "metadata": "",
@@ -1093,14 +1085,6 @@
         "userAdded": false
       },
       {
-        "file": "kenalan (3).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "kenalan (3).png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "kenalan (1).png",
         "kind": "image",
         "metadata": "",
@@ -1154,6 +1138,66 @@
         "metadata": "",
         "name": "kenalan (3)2.png",
         "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "[Hutan] Dan terakhir, Peni! Ia memakai bando bunga dan kalung mutiara yang indah.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "[Hutan] Dan terakhir, Peni! Ia memakai bando bunga dan kalung mutiara yang indah.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "[Hutan] Nah, itu Rian! Ia memakai mahkota dan syal biru di lehernya.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "[Hutan] Nah, itu Rian! Ia memakai mahkota dan syal biru di lehernya.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "[Hutan] Lihat, Gajah dengan topi koboi mini dan syal garis merah itu namanya Gino.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "[Hutan] Lihat, Gajah dengan topi koboi mini dan syal garis merah itu namanya Gino.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "[Hutan] Lalu, ini Ano! Dengan topi bulat hitam bergaris merah dan dasi kupu-kupu yang rapi.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "[Hutan] Lalu, ini Ano! Dengan topi bulat hitam bergaris merah dan dasi kupu-kupu yang rapi.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "[Hutan] Yang ini Kiki! Ia mengenakan topi penyihir ungu kecil dan memegang tongkat sihir berbintang.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "[Hutan] Yang ini Kiki! Ia mengenakan topi penyihir ungu kecil dan memegang tongkat sihir berbintang.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "_H7D60~1.WAV",
+        "kind": "audio",
+        "metadata": "",
+        "name": "_H7D60~1.WAV",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ],
@@ -16737,7 +16781,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.37364767886414013,
+        "zoomFactor": 0.36145915678676616,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -16761,7 +16805,7 @@
           "width": 1280,
           "x": 0,
           "y": 0,
-          "zOrder": 15,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -16958,7 +17002,7 @@
           "opacity": 0,
           "persistentUuid": "de7b9829-70cc-410c-aa16-a879f6758b8d",
           "width": 168,
-          "x": 975,
+          "x": 970,
           "y": 415,
           "zOrder": 5,
           "numberProperties": [],
@@ -17458,42 +17502,6 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 609.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 168,
-                            "y": 0
-                          },
-                          {
-                            "x": 168,
-                            "y": 235
-                          },
-                          {
-                            "x": 0,
-                            "y": 235
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
                       "image": "Group 610.png",
                       "points": [],
                       "originPoint": {
@@ -17530,7 +17538,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group612.png",
+                      "image": "Group 609.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -17567,6 +17575,42 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group 613.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 235
+                          },
+                          {
+                            "x": 0,
+                            "y": 235
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group612.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -17680,43 +17724,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 601.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 11,
-                            "y": 1
-                          },
-                          {
-                            "x": 188,
-                            "y": 1
-                          },
-                          {
-                            "x": 188,
-                            "y": 228
-                          },
-                          {
-                            "x": 11,
-                            "y": 228
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 603.png",
+                      "image": "Group 605.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -17788,7 +17796,43 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 605.png",
+                      "image": "Group 603.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11,
+                            "y": 1
+                          },
+                          {
+                            "x": 188,
+                            "y": 1
+                          },
+                          {
+                            "x": 188,
+                            "y": 228
+                          },
+                          {
+                            "x": 11,
+                            "y": 228
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 601.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -17902,43 +17946,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 615.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 291,
-                            "y": 0
-                          },
-                          {
-                            "x": 291,
-                            "y": 283
-                          },
-                          {
-                            "x": 0,
-                            "y": 283
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 616.png",
+                      "image": "Group 618.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -18010,7 +18018,43 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 618.png",
+                      "image": "Group 616.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 291,
+                            "y": 0
+                          },
+                          {
+                            "x": 291,
+                            "y": 283
+                          },
+                          {
+                            "x": 0,
+                            "y": 283
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 615.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -18755,6 +18799,21 @@
           "actions": [
             {
               "type": {
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+              },
+              "parameters": [
+                "Transition",
+                "FlashTransitionPainter",
+                "\"204;235;173\"",
+                "1.5",
+                "\"Flash\"",
+                "\"Backward\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ActivateBehavior"
               },
               "parameters": [
@@ -18785,7 +18844,7 @@
                 "615",
                 "355",
                 "\"linear\"",
-                "5.5",
+                "4.5",
                 ""
               ]
             },
@@ -18831,7 +18890,7 @@
                 "400",
                 "410",
                 "\"linear\"",
-                "5",
+                "4",
                 ""
               ]
             },
@@ -18854,7 +18913,7 @@
                 "580",
                 "225",
                 "\"linear\"",
-                "4",
+                "3",
                 ""
               ]
             },
@@ -18877,7 +18936,7 @@
                 "970",
                 "415",
                 "\"linear\"",
-                "5",
+                "4",
                 ""
               ]
             }
@@ -19421,6 +19480,19 @@
                 "AutoTyping",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "_H7D60~1.WAV",
+                "5",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -19735,7 +19807,7 @@
                 "Gino_Kenalan",
                 "Tween",
                 "\"Geser\"",
-                "410",
+                "425",
                 "70",
                 "\"linear\"",
                 "1",
@@ -19777,12 +19849,35 @@
                 "=",
                 "\"Lihat, Gajah dengan topi koboi mini dan syal garis merah itu namanya Gino!\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "[Hutan] Lihat, Gajah dengan topi koboi mini dan syal garis merah itu namanya Gino.wav",
+                "5",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "2"
+              ]
+            },
             {
               "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::Value"
@@ -19960,8 +20055,8 @@
                 "Ano_Kenalan",
                 "Tween",
                 "\"Geser\"",
-                "510",
-                "25",
+                "455",
+                "75",
                 "\"linear\"",
                 "1",
                 ""
@@ -20024,12 +20119,35 @@
                 "=",
                 "\"Lalu, ini Ano! Dengan topi bulat hitam bergaris merah dan dasi kupu-kupu yang rapi.\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "[Hutan] Lalu, ini Ano! Dengan topi bulat hitam bergaris merah dan dasi kupu-kupu yang rapi.wav",
+                "5",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "4"
+              ]
+            },
             {
               "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::Value"
@@ -20207,8 +20325,8 @@
                 "Rian_Kenalan",
                 "Tween",
                 "\"Geser\"",
-                "440",
-                "75",
+                "465",
+                "80",
                 "\"linear\"",
                 "1",
                 ""
@@ -20271,12 +20389,35 @@
                 "=",
                 "\"Nah, itu Rian! Ia memakai mahkota dan syal biru di lehernya.\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "[Hutan] Nah, itu Rian! Ia memakai mahkota dan syal biru di lehernya.wav",
+                "5",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "6"
+              ]
+            },
             {
               "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::Value"
@@ -20454,7 +20595,7 @@
                 "Kiki_Kenalan",
                 "Tween",
                 "\"Geser\"",
-                "70",
+                "85",
                 "15",
                 "\"linear\"",
                 "1",
@@ -20481,7 +20622,7 @@
                 "value": "ChangePlan"
               },
               "parameters": [
-                "Kiki",
+                "Kiki_Kenalan",
                 "+",
                 "10"
               ]
@@ -20518,12 +20659,35 @@
                 "=",
                 "\"Yang ini Kiki! Ia mengenakan topi penyihir ungu kecil dan memegang tongkat sihir berbintang.\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "[Hutan] Yang ini Kiki! Ia mengenakan topi penyihir ungu kecil dan memegang tongkat sihir berbintang.wav",
+                "5",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "8"
+              ]
+            },
             {
               "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::Value"
@@ -20701,7 +20865,7 @@
                 "Peni_Kenalan",
                 "Tween",
                 "\"Geser\"",
-                "470",
+                "500",
                 "80",
                 "\"linear\"",
                 "1",
@@ -20765,12 +20929,35 @@
                 "=",
                 "\"Dan terakhir, Peni! Ia memakai bando bunga dan kalung mutiara yang indah.\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "[Hutan] Dan terakhir, Peni! Ia memakai bando bunga dan kalung mutiara yang indah.wav",
+                "5",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "10"
+              ]
+            },
             {
               "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::Value"
@@ -20880,7 +21067,7 @@
                 "value": "Tween::HasFinished"
               },
               "parameters": [
-                "Peni",
+                "Peni_Kenalan",
                 "Tween",
                 "\"Selesai_Pengenalan\""
               ]
@@ -20900,7 +21087,7 @@
               "parameters": [
                 "Transition",
                 "FlashTransitionPainter",
-                "\"200;191;247\"",
+                "\"204;235;173\"",
                 "1",
                 "\"Circular\"",
                 "\"Forward\"",
@@ -20913,6 +21100,16 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "11"
+              ]
+            },
             {
               "type": {
                 "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffectIsEnd"
@@ -20928,7 +21125,7 @@
                 "value": "Tween::HasFinished"
               },
               "parameters": [
-                "Peni",
+                "Peni_Kenalan",
                 "Tween",
                 "\"Selesai_Pengenalan\""
               ]
@@ -21129,8 +21326,33 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+              },
+              "parameters": [
+                "Transition",
+                "FlashTransitionPainter",
+                "\"204;235;173\"",
+                "1.5",
+                "\"Flash\"",
+                "\"Backward\"",
+                "",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [

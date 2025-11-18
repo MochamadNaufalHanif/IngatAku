@@ -13645,6 +13645,24 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "3"
+              ]
             }
           ]
         },
@@ -13734,27 +13752,21 @@
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "Oca",
-                    "Tween",
-                    "\"Muncul\"",
-                    "255",
-                    "\"easeOutQuad\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                  },
-                  "parameters": [
                     "ObjekPertanyaan1",
                     "Tween",
                     "\"Muncul\"",
                     "255",
                     "\"easeOutQuad\"",
-                    "1",
+                    "0.5",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
                   ]
                 }
               ],
@@ -13898,6 +13910,16 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::HasFinished"
                   },
                   "parameters": [
@@ -13914,6 +13936,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "4"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -14003,27 +14035,21 @@
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "Mia",
-                    "Tween",
-                    "\"Muncul\"",
-                    "255",
-                    "\"easeOutQuad\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                  },
-                  "parameters": [
                     "ObjekPertanyaan2",
                     "Tween",
                     "\"Muncul\"",
                     "255",
                     "\"easeOutQuad\"",
-                    "1",
+                    "0.5",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
                   ]
                 }
               ],
@@ -14167,6 +14193,16 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::HasFinished"
                   },
                   "parameters": [
@@ -14183,6 +14219,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "5"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -14272,27 +14318,21 @@
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "Una",
-                    "Tween",
-                    "\"Muncul\"",
-                    "255",
-                    "\"easeOutQuad\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                  },
-                  "parameters": [
                     "ObjekPertanyaan3",
                     "Tween",
                     "\"Muncul\"",
                     "255",
                     "\"easeOutQuad\"",
-                    "1",
+                    "0.5",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
                   ]
                 }
               ],
@@ -14436,6 +14476,16 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::HasFinished"
                   },
                   "parameters": [
@@ -14452,6 +14502,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "6"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -14541,27 +14601,21 @@
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "Bina",
-                    "Tween",
-                    "\"Muncul\"",
-                    "255",
-                    "\"easeOutQuad\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                  },
-                  "parameters": [
                     "ObjekPertanyaan4",
                     "Tween",
                     "\"Muncul\"",
                     "255",
                     "\"easeOutQuad\"",
-                    "1",
+                    "0.5",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
                   ]
                 }
               ],
@@ -14705,6 +14759,16 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::HasFinished"
                   },
                   "parameters": [
@@ -14721,6 +14785,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "7"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -14810,27 +14884,21 @@
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "Hani",
-                    "Tween",
-                    "\"Muncul\"",
-                    "255",
-                    "\"easeOutQuad\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                  },
-                  "parameters": [
                     "ObjekPertanyaan5",
                     "Tween",
                     "\"Muncul\"",
                     "255",
                     "\"easeOutQuad\"",
-                    "1",
+                    "0.5",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
                   ]
                 }
               ],
@@ -14974,6 +15042,16 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "7"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::HasFinished"
                   },
                   "parameters": [
@@ -14990,6 +15068,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "8"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -15015,6 +15103,18 @@
               "comment": ""
             },
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -15029,30 +15129,12 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Bina",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Hani",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Kotak_Bina",
+                    "ButtonFSM",
+                    ""
                   ]
                 },
                 {
@@ -15074,6 +15156,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan1",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetNumberObjectVariable"
@@ -15110,16 +15202,6 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
                     "1"
                   ]
                 }
@@ -15141,16 +15223,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan1",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -15159,7 +15231,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -15179,10 +15251,184 @@
                         "ObjekPertanyaan1",
                         "="
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Pertanyaan_NamaKarakter[Pertanyaan_SaatIni]",
+                    "=",
+                    "\"Oca\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Kotak_Hani",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan1",
+                    "Klik",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan1",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan1",
+                    "Klik",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    "Opacity",
+                    "=",
+                    "150"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "ObjekPertanyaan1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan1",
+                        "Tween",
+                        "\"Hilang\"",
+                        "0",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan1",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -15199,30 +15445,12 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Hani",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Una",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Kotak_Hani",
+                    "ButtonFSM",
+                    ""
                   ]
                 },
                 {
@@ -15244,6 +15472,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan2",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetNumberObjectVariable"
@@ -15280,16 +15518,6 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
                     "1"
                   ]
                 }
@@ -15311,16 +15539,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan2",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -15329,7 +15547,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -15349,10 +15567,184 @@
                         "ObjekPertanyaan2",
                         "="
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Pertanyaan_NamaKarakter[Pertanyaan_SaatIni]",
+                    "=",
+                    "\"Mia\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Kotak_Una",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan2",
+                    "Klik",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan2",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan2",
+                    "Klik",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    "Opacity",
+                    "=",
+                    "150"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "ObjekPertanyaan2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan2",
+                        "Tween",
+                        "\"Hilang\"",
+                        "0",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan2",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -15369,30 +15761,12 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Oca",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Bina",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Kotak_Oca",
+                    "ButtonFSM",
+                    ""
                   ]
                 },
                 {
@@ -15414,6 +15788,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan3",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetNumberObjectVariable"
@@ -15452,14 +15836,156 @@
                   "parameters": [
                     "1"
                   ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "ObjekPertanyaan3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan3",
+                        "Tween",
+                        "\"Hilang\"",
+                        "0",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan3",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Pertanyaan_NamaKarakter[Pertanyaan_SaatIni]",
+                    "=",
+                    "\"Una\""
+                  ]
                 },
                 {
                   "type": {
-                    "value": "SetNumberVariable"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
+                    "Kotak_Bina",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan3",
+                    "Klik",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan3",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan3",
+                    "Klik",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    "Opacity",
+                    "=",
+                    "150"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
                     "1"
                   ]
                 }
@@ -15481,16 +16007,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan3",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -15499,7 +16015,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -15517,6 +16033,180 @@
                       },
                       "parameters": [
                         "ObjekPertanyaan3",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Pertanyaan_NamaKarakter[Pertanyaan_SaatIni]",
+                    "=",
+                    "\"Bina\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Kotak_Una",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan4",
+                    "Klik",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan4",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan4",
+                    "Klik",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    "Opacity",
+                    "=",
+                    "150"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "ObjekPertanyaan4"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan4",
+                        "Tween",
+                        "\"Hilang\"",
+                        "0",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan4",
                         "="
                       ]
                     }
@@ -15539,30 +16229,12 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Una",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Mia",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Kotak_Mia",
+                    "ButtonFSM",
+                    ""
                   ]
                 },
                 {
@@ -15584,6 +16256,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan4",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetNumberObjectVariable"
@@ -15620,16 +16302,6 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
                     "1"
                   ]
                 }
@@ -15651,16 +16323,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan4",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -15669,7 +16331,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -15678,6 +16340,16 @@
                         "value": "Wait"
                       },
                       "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
                         "1"
                       ]
                     },
@@ -15695,6 +16367,18 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -15709,30 +16393,12 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Bina",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ButtonStates::ButtonFSM::IsClicked"
-                      },
-                      "parameters": [
-                        "Kotak_Una",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Kotak_Bina",
+                    "ButtonFSM",
+                    ""
                   ]
                 },
                 {
@@ -15754,6 +16420,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan5",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetNumberObjectVariable"
@@ -15792,14 +16468,156 @@
                   "parameters": [
                     "1"
                   ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "ObjekPertanyaan5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan5",
+                        "Tween",
+                        "\"Hilang\"",
+                        "0",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan5",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Pertanyaan_NamaKarakter[Pertanyaan_SaatIni]",
+                    "=",
+                    "\"Hani\""
+                  ]
                 },
                 {
                   "type": {
-                    "value": "SetNumberVariable"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
+                    "Kotak_Una",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan5",
+                    "Klik",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan5",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan5",
+                    "Klik",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    "Opacity",
+                    "=",
+                    "150"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
                     "1"
                   ]
                 }
@@ -15821,16 +16639,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan5",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -15839,7 +16647,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -15859,10 +16667,32 @@
                         "ObjekPertanyaan5",
                         "="
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
             },
             {
               "folded": true,
@@ -15983,6 +16813,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan1",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
                   },
                   "parameters": [
@@ -16030,16 +16870,6 @@
                   "parameters": [
                     "1"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
-                    "1"
-                  ]
                 }
               ],
               "events": [
@@ -16059,16 +16889,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan1",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -16077,7 +16897,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -16096,6 +16916,16 @@
                       "parameters": [
                         "ObjekPertanyaan1",
                         "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
                       ]
                     }
                   ]
@@ -16146,6 +16976,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan2",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
                   },
                   "parameters": [
@@ -16193,16 +17033,6 @@
                   "parameters": [
                     "1"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
-                    "1"
-                  ]
                 }
               ],
               "events": [
@@ -16222,16 +17052,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan2",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -16240,7 +17060,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -16259,6 +17079,16 @@
                       "parameters": [
                         "ObjekPertanyaan2",
                         "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
                       ]
                     }
                   ]
@@ -16309,6 +17139,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan3",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
                   },
                   "parameters": [
@@ -16356,16 +17196,6 @@
                   "parameters": [
                     "1"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
-                    "1"
-                  ]
                 }
               ],
               "events": [
@@ -16385,16 +17215,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan3",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -16403,7 +17223,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -16422,6 +17242,16 @@
                       "parameters": [
                         "ObjekPertanyaan3",
                         "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
                       ]
                     }
                   ]
@@ -16459,6 +17289,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan4",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
                 {
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
@@ -16508,16 +17348,6 @@
                   "parameters": [
                     "1"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
-                    "1"
-                  ]
                 }
               ],
               "events": [
@@ -16537,16 +17367,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan4",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -16555,7 +17375,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -16574,6 +17394,16 @@
                       "parameters": [
                         "ObjekPertanyaan4",
                         "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
                       ]
                     }
                   ]
@@ -16624,23 +17454,33 @@
               "actions": [
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-                  },
-                  "parameters": [
-                    "Kotak_Hani",
-                    "Animation",
-                    "+",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
                     "ObjekPertanyaan5",
                     "Klik",
                     "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ObjekPertanyaan5",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "Kotak_Hani",
+                    "Animation",
+                    "+",
                     "1"
                   ]
                 },
@@ -16671,16 +17511,6 @@
                   "parameters": [
                     "1"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Pertanyaan_SaatIni",
-                    "+",
-                    "1"
-                  ]
                 }
               ],
               "events": [
@@ -16700,16 +17530,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "ObjekPertanyaan5",
-                        "ButtonFSM",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
@@ -16718,7 +17538,7 @@
                         "\"Hilang\"",
                         "0",
                         "\"easeOutQuad\"",
-                        "1",
+                        "0.5",
                         ""
                       ]
                     },
@@ -16737,6 +17557,16 @@
                       "parameters": [
                         "ObjekPertanyaan5",
                         "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
                       ]
                     }
                   ]
@@ -17140,7 +17970,7 @@
           "isLocked": false,
           "name": "Warna",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -22105,8 +22935,32 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
           "actions": [
+            {
+              "type": {
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+              },
+              "parameters": [
+                "Transition",
+                "FlashTransitionPainter",
+                "\"204;235;173\"",
+                "1.5",
+                "\"Flash\"",
+                "\"Backward\"",
+                "",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Wait"

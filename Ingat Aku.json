@@ -1519,6 +1519,26 @@
         "name": "Group 261.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "karakter ketemu (yg karakter ada bintang-bintang sama aura kuning) - ingat aku.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "karakter ketemu (yg karakter ada bintang-bintang sama aura kuning) - ingat aku.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Perhatikan setiap karakter yang lewat, ya! - ingat aku.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Perhatikan setiap karakter yang lewat, ya! - ingat aku.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -27328,7 +27348,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.4335774304702376,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -27479,6 +27499,41 @@
             },
             {
               "name": "Pertanyaan_txt"
+            }
+          ]
+        },
+        {
+          "name": "button jawaban",
+          "objects": [
+            {
+              "name": "Rian"
+            },
+            {
+              "name": "Peni"
+            },
+            {
+              "name": "Ano"
+            },
+            {
+              "name": "Gino"
+            },
+            {
+              "name": "Kiki"
+            },
+            {
+              "name": "Button_Gino"
+            },
+            {
+              "name": "Button_Peni"
+            },
+            {
+              "name": "Button_Ano"
+            },
+            {
+              "name": "Button_Kiki"
+            },
+            {
+              "name": "Button_Rian"
             }
           ]
         }
@@ -27739,23 +27794,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 379,
-          "layer": "",
-          "name": "Kiki_Kenalan",
-          "opacity": 0,
-          "persistentUuid": "261f7af4-3936-4f45-a6ff-75704d98dee1",
-          "width": 574,
-          "x": 580,
-          "y": 313,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
@@ -27864,6 +27902,40 @@
           "x": 175,
           "y": 0,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Warna",
+          "name": "Flash_Salah",
+          "opacity": 0,
+          "persistentUuid": "5a8e1159-705c-42f5-8893-60fc622d88d9",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Warna",
+          "name": "Flash_Benar",
+          "opacity": 0,
+          "persistentUuid": "d44bb7a7-d39f-4821-ae05-f73ba86f22b7",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -32867,7 +32939,7 @@
                   "parameters": [
                     "KumpulanPertanyaan[Pertanyaan_SaatIni]",
                     "=",
-                    "\"Kuis2 Gino\""
+                    "\"Kuis2 Peni\""
                   ]
                 },
                 {
@@ -39786,6 +39858,23 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -39882,7 +39971,7 @@
                         "value": "ButtonStates::ButtonFSM::IsClicked"
                       },
                       "parameters": [
-                        "Peni",
+                        "Ano",
                         "ButtonFSM",
                         ""
                       ]
@@ -39958,6 +40047,23 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -40132,6 +40238,23 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -40304,6 +40427,23 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -40490,6 +40630,23 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -40662,6 +40819,23 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -40836,6 +41010,23 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -41008,6 +41199,23 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -41194,6 +41402,23 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -41366,6 +41591,23 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -41540,6 +41782,23 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -41712,6 +41971,23 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -41898,6 +42174,23 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -42070,6 +42363,23 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -42244,6 +42554,23 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
@@ -42416,6 +42743,23 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "0.08",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -42630,7 +42974,7 @@
                       },
                       "parameters": [
                         "",
-                        "jawaban benar - ingat aku.wav",
+                        "karakter ketemu (yg karakter ada bintang-bintang sama aura kuning) - ingat aku.wav",
                         "1",
                         "",
                         "",
@@ -42673,7 +43017,7 @@
                         "value": "Montre"
                       },
                       "parameters": [
-                        "Flash_Benar",
+                        "CahayaBintang",
                         ""
                       ]
                     },
@@ -42682,10 +43026,64 @@
                         "value": "OpacityCapability::OpacityBehavior::SetValue"
                       },
                       "parameters": [
-                        "Flash_Benar",
+                        "CahayaBintang",
                         "Opacity",
                         "=",
-                        "150"
+                        "255"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Peni_Kenalan",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Peni_Kenalan",
+                        "Tween",
+                        "\"Geser\"",
+                        "500",
+                        "80",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                      },
+                      "parameters": [
+                        "Peni_Kenalan",
+                        "Tween",
+                        "\"\"",
+                        "1",
+                        "\"linear\"",
+                        "1",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Peni_Kenalan",
+                        "+",
+                        "10"
                       ]
                     }
                   ],
@@ -42710,6 +43108,20 @@
                           },
                           "parameters": [
                             "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Peni_Kenalan",
+                            "Tween",
+                            "\"Hilang\"",
+                            "0",
+                            "\"easeOutQuad\"",
+                            "0.5",
+                            ""
                           ]
                         },
                         {
@@ -42813,7 +43225,7 @@
                       },
                       "parameters": [
                         "",
-                        "jawaban benar - ingat aku.wav",
+                        "karakter ketemu (yg karakter ada bintang-bintang sama aura kuning) - ingat aku.wav",
                         "1",
                         "",
                         "",
@@ -42856,7 +43268,7 @@
                         "value": "Montre"
                       },
                       "parameters": [
-                        "Flash_Benar",
+                        "CahayaBintang",
                         ""
                       ]
                     },
@@ -42865,10 +43277,64 @@
                         "value": "OpacityCapability::OpacityBehavior::SetValue"
                       },
                       "parameters": [
-                        "Flash_Benar",
+                        "CahayaBintang",
                         "Opacity",
                         "=",
-                        "150"
+                        "255"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Ano_Kenalan",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Ano_Kenalan",
+                        "Tween",
+                        "\"Geser\"",
+                        "455",
+                        "75",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                      },
+                      "parameters": [
+                        "Ano_Kenalan",
+                        "Tween",
+                        "\"\"",
+                        "1",
+                        "\"linear\"",
+                        "1",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Ano_Kenalan",
+                        "+",
+                        "10"
                       ]
                     }
                   ],
@@ -42893,6 +43359,20 @@
                           },
                           "parameters": [
                             "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Ano_Kenalan",
+                            "Tween",
+                            "\"Hilang\"",
+                            "0",
+                            "\"easeOutQuad\"",
+                            "0.5",
+                            ""
                           ]
                         },
                         {
@@ -42996,7 +43476,7 @@
                       },
                       "parameters": [
                         "",
-                        "jawaban benar - ingat aku.wav",
+                        "karakter ketemu (yg karakter ada bintang-bintang sama aura kuning) - ingat aku.wav",
                         "1",
                         "",
                         "",
@@ -43039,7 +43519,7 @@
                         "value": "Montre"
                       },
                       "parameters": [
-                        "Flash_Benar",
+                        "CahayaBintang",
                         ""
                       ]
                     },
@@ -43048,10 +43528,64 @@
                         "value": "OpacityCapability::OpacityBehavior::SetValue"
                       },
                       "parameters": [
-                        "Flash_Benar",
+                        "CahayaBintang",
                         "Opacity",
                         "=",
-                        "150"
+                        "255"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Rian_Kenalan",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Rian_Kenalan",
+                        "Tween",
+                        "\"Geser\"",
+                        "465",
+                        "80",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                      },
+                      "parameters": [
+                        "Rian_Kenalan",
+                        "Tween",
+                        "\"\"",
+                        "1",
+                        "\"linear\"",
+                        "1",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Rian_Kenalan",
+                        "+",
+                        "10"
                       ]
                     }
                   ],
@@ -43076,6 +43610,20 @@
                           },
                           "parameters": [
                             "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Rian_Kenalan",
+                            "Tween",
+                            "\"Hilang\"",
+                            "0",
+                            "\"easeOutQuad\"",
+                            "0.5",
+                            ""
                           ]
                         },
                         {
@@ -43179,7 +43727,7 @@
                       },
                       "parameters": [
                         "",
-                        "jawaban benar - ingat aku.wav",
+                        "karakter ketemu (yg karakter ada bintang-bintang sama aura kuning) - ingat aku.wav",
                         "1",
                         "",
                         "",
@@ -43222,7 +43770,7 @@
                         "value": "Montre"
                       },
                       "parameters": [
-                        "Flash_Benar",
+                        "CahayaBintang",
                         ""
                       ]
                     },
@@ -43231,10 +43779,64 @@
                         "value": "OpacityCapability::OpacityBehavior::SetValue"
                       },
                       "parameters": [
-                        "Flash_Benar",
+                        "CahayaBintang",
                         "Opacity",
                         "=",
-                        "150"
+                        "255"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Gino_Kenalan",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Gino_Kenalan",
+                        "Tween",
+                        "\"Geser\"",
+                        "425",
+                        "70",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                      },
+                      "parameters": [
+                        "Gino_Kenalan",
+                        "Tween",
+                        "\"Membesar\"",
+                        "1",
+                        "\"linear\"",
+                        "1",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Gino_Kenalan",
+                        "+",
+                        "10"
                       ]
                     }
                   ],
@@ -43315,7 +43917,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -43323,20 +43924,23 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "Flash_Benar"
+                        "CahayaBintang"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
-                        "Flash_Benar",
-                        "Opacity",
-                        "-",
-                        "100 * TimeDelta()"
+                        "CahayaBintang",
+                        "Tween",
+                        "\"Hilang\"",
+                        "0",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
                       ]
                     }
                   ],
@@ -43355,7 +43959,7 @@
                                 "value": "OpacityCapability::OpacityBehavior::Value"
                               },
                               "parameters": [
-                                "Flash_Benar",
+                                "CahayaBintang",
                                 "Opacity",
                                 "<=",
                                 "0"
@@ -43370,7 +43974,194 @@
                             "value": "Cache"
                           },
                           "parameters": [
-                            "Flash_Benar"
+                            "CahayaBintang"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Peni_Kenalan",
+                                "Tween",
+                                "\"Geser\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Ano_Kenalan",
+                                "Tween",
+                                "\"Geser\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Rian_Kenalan",
+                                "Tween",
+                                "\"Geser\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Gino_Kenalan",
+                                "Tween",
+                                "\"Geser\""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Tween::IsPlaying"
+                          },
+                          "parameters": [
+                            "CahayaBintang",
+                            "Tween",
+                            "\"Hilang\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Ano_Kenalan",
+                            "Tween",
+                            "\"Hilang\"",
+                            "0",
+                            "\"easeOutQuad\"",
+                            "0.5",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Tween::IsPlaying"
+                          },
+                          "parameters": [
+                            "CahayaBintang",
+                            "Tween",
+                            "\"Hilang\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Gino_Kenalan",
+                            "Tween",
+                            "\"Hilang\"",
+                            "0",
+                            "\"easeOutQuad\"",
+                            "0.5",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Tween::IsPlaying"
+                          },
+                          "parameters": [
+                            "CahayaBintang",
+                            "Tween",
+                            "\"Hilang\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Rian_Kenalan",
+                            "Tween",
+                            "\"Hilang\"",
+                            "0",
+                            "\"easeOutQuad\"",
+                            "0.5",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Tween::IsPlaying"
+                          },
+                          "parameters": [
+                            "CahayaBintang",
+                            "Tween",
+                            "\"Hilang\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Peni_Kenalan",
+                            "Tween",
+                            "\"Hilang\"",
+                            "0",
+                            "\"easeOutQuad\"",
+                            "0.5",
+                            ""
                           ]
                         }
                       ]
@@ -43388,7 +44179,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Setting",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -43539,6 +44329,16 @@
                     "Button_X",
                     "ButtonFSM",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "button jawaban",
+                    "ButtonFSM",
+                    "no"
                   ]
                 },
                 {
@@ -43944,6 +44744,16 @@
                         "ButtonFSM",
                         "yes"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "button jawaban",
+                        "ButtonFSM",
+                        "yes"
+                      ]
                     }
                   ]
                 }
@@ -44049,6 +44859,59 @@
               },
               "stringParameters": {},
               "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Warna",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
             }
           ]
         },
@@ -44181,7 +45044,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3437520241612314,
+        "zoomFactor": 0.584378441074093,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -44404,8 +45267,8 @@
           "name": "Karakter1",
           "persistentUuid": "a0132778-8529-4859-9dbd-a6888392f6fd",
           "width": 0,
-          "x": 1314,
-          "y": 150,
+          "x": 1116,
+          "y": 248,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -44420,8 +45283,8 @@
           "name": "Karakter2",
           "persistentUuid": "2590e1e9-0a5b-4e37-b5ec-75d4cce7e6a0",
           "width": 0,
-          "x": 1210,
-          "y": 700,
+          "x": -335,
+          "y": 300,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -44436,8 +45299,8 @@
           "name": "Karakter3",
           "persistentUuid": "d97d5196-914c-4043-9983-9f56468bf1c3",
           "width": 0,
-          "x": 1610,
-          "y": 808,
+          "x": -184,
+          "y": 354,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -44452,8 +45315,8 @@
           "name": "Karakter4",
           "persistentUuid": "6bbc791a-d5d2-4fc7-970e-5160e56e60e1",
           "width": 0,
-          "x": 831,
-          "y": 735,
+          "x": -221,
+          "y": 335,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -44468,9 +45331,96 @@
           "name": "Karakter5",
           "persistentUuid": "2e747c90-2ac8-428f-b8bd-aafeb60107ac",
           "width": 0,
-          "x": 528,
-          "y": 761,
+          "x": 1328,
+          "y": 361,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Warna",
+          "name": "Flash_Benar",
+          "opacity": 0,
+          "persistentUuid": "ee82ab89-7ed6-4544-b3b7-993ddc22d02e",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Warna",
+          "name": "Flash_Salah",
+          "opacity": 0,
+          "persistentUuid": "1d209c3c-6577-4ceb-b2f0-4e95374211eb",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 97,
+          "keepRatio": true,
+          "layer": "",
+          "name": "KotakPesan",
+          "opacity": 0,
+          "persistentUuid": "b929e7e1-b960-40d7-8edb-7dfc4aa65398",
+          "width": 774,
+          "x": 255,
+          "y": 25,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 34,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Teks",
+          "opacity": 0,
+          "persistentUuid": "35369763-49d6-44fd-addb-a3fd2d0ffa98",
+          "width": 694,
+          "x": 295,
+          "y": 55,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "KetukManaAja",
+          "opacity": 0,
+          "persistentUuid": "068e48fd-7eb1-4112-b47a-b9c698d42ef6",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -45940,6 +46890,28 @@
             },
             {
               "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "KotakPesan",
+                "Tween",
+                "\"Muncul\"",
+                "255",
+                "\"easeOutQuad\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
                 "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
@@ -45954,15 +46926,77 @@
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
                 "Teks",
-                "Text",
-                "=",
-                "\"Perhatikan setiap karakter yang lewat, ya!\""
+                "Tween",
+                "\"Muncul\"",
+                "255",
+                "\"easeOutQuad\"",
+                "1",
+                ""
               ]
             },
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "Perhatikan setiap karakter yang lewat, ya! - ingat aku.wav",
+                "5",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MusicPlaying"
+                  },
+                  "parameters": [
+                    "",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Teks",
+                    "Text",
+                    "=",
+                    "\"Perhatikan setiap karakter yang lewat, ya!\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SoundPlaying"
+              },
+              "parameters": [
+                "",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -46641,6 +47675,59 @@
               },
               "stringParameters": {},
               "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Warna",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
             }
           ]
         },

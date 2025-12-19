@@ -1704,18 +1704,18 @@
         "userAdded": false
       },
       {
-        "file": "Group 668.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 668.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "Group 722.png",
         "kind": "image",
         "metadata": "",
         "name": "Group 722.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 668.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 668.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -1768,18 +1768,18 @@
         "userAdded": false
       },
       {
-        "file": "Group 716.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 716.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "Group 726.png",
         "kind": "image",
         "metadata": "",
         "name": "Group 726.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 716.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 716.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -1806,6 +1806,16 @@
         "kind": "audio",
         "metadata": "",
         "name": "main gameplay pesta bgm - ingat aku.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Siapakah yang berada di belakang rumah - ingat aku.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Siapakah yang berada di belakang rumah - ingat aku.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -3474,7 +3484,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.5468750000000003,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -10051,6 +10061,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Nomor",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -10068,23 +10088,33 @@
           "conditions": [
             {
               "type": {
-                "value": "AutoTyping::AutoTyping::IsFinished"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "Text_pesta",
-                "AutoTyping",
+                "Nomor",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
                 ""
               ]
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                "inverted": true,
+                "value": "AutoTyping::AutoTyping::IsFinished"
               },
               "parameters": [
-                "Text_pesta",
-                "Text",
-                "=",
-                "\"Hore! Cici si Kelinci sedang berulang tahun! Lima sahabatnya datang ke pesta dengan memakai topi ulang tahun yang warnanya berbeda. Ayo bantu Cici mengingat nama semua tamunya!\""
+                "Teks",
+                "AutoTyping",
+                ""
               ]
             },
             {
@@ -10102,7 +10132,176 @@
               "parameters": [
                 "Nomor",
                 "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "Teks",
+                "AutoTyping",
+                "94"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::ShowFullText"
+              },
+              "parameters": [
+                "Teks",
+                "AutoTyping",
+                "95"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopMusicCanal"
+              },
+              "parameters": [
+                "",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::IsFinished"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "5"
               ]
             }
           ]
@@ -46388,17 +46587,12 @@
           ]
         },
         {
-          "folded": true,
           "name": "UrutanKarakter",
           "type": "array",
           "children": [
             {
               "type": "string",
-              "value": "Kiki"
-            },
-            {
-              "type": "string",
-              "value": "Ano"
+              "value": "Rian"
             },
             {
               "type": "string",
@@ -46406,11 +46600,15 @@
             },
             {
               "type": "string",
+              "value": "Ano"
+            },
+            {
+              "type": "string",
               "value": "Peni"
             },
             {
               "type": "string",
-              "value": "Rian"
+              "value": "Kiki"
             }
           ]
         },
@@ -46420,9 +46618,62 @@
           "value": 0
         },
         {
-          "name": "Urutan",
+          "name": "Counter",
           "type": "number",
-          "value": 0
+          "value": 6
+        },
+        {
+          "folded": true,
+          "name": "Giliran",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "type": "string",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "Kecepatan",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 400
+            },
+            {
+              "type": "number",
+              "value": 450
+            },
+            {
+              "type": "number",
+              "value": 500
+            },
+            {
+              "type": "number",
+              "value": 550
+            },
+            {
+              "type": "number",
+              "value": 600
+            }
+          ]
         }
       ],
       "instances": [
@@ -46621,14 +46872,15 @@
         {
           "angle": 0,
           "customSize": false,
+          "flippedX": true,
           "height": 0,
           "keepRatio": true,
           "layer": "",
           "name": "Kiki",
           "persistentUuid": "a0132778-8529-4859-9dbd-a6888392f6fd",
           "width": 0,
-          "x": 1118,
-          "y": 240,
+          "x": -419,
+          "y": 248,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -46643,8 +46895,8 @@
           "name": "Gino",
           "persistentUuid": "2590e1e9-0a5b-4e37-b5ec-75d4cce7e6a0",
           "width": 0,
-          "x": -327,
-          "y": 341,
+          "x": -864,
+          "y": 322,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -46659,8 +46911,8 @@
           "name": "Rian",
           "persistentUuid": "d97d5196-914c-4043-9983-9f56468bf1c3",
           "width": 0,
-          "x": -176,
-          "y": 377,
+          "x": -612,
+          "y": 343,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -46675,8 +46927,8 @@
           "name": "Ano",
           "persistentUuid": "6bbc791a-d5d2-4fc7-970e-5160e56e60e1",
           "width": 0,
-          "x": -213,
-          "y": 377,
+          "x": -428,
+          "y": 337,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -46685,14 +46937,15 @@
         {
           "angle": 0,
           "customSize": false,
+          "flippedX": true,
           "height": 0,
           "keepRatio": true,
           "layer": "",
           "name": "Peni",
           "persistentUuid": "2e747c90-2ac8-428f-b8bd-aafeb60107ac",
           "width": 0,
-          "x": 254,
-          "y": 316,
+          "x": -1002,
+          "y": 301,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -46791,12 +47044,12 @@
           "depth": 1,
           "height": 60,
           "keepRatio": true,
-          "layer": "",
+          "layer": "ktk",
           "name": "ktk_rumah",
           "persistentUuid": "26f2738c-ce94-459e-811b-f41c68e260be",
           "width": 64,
-          "x": 582,
-          "y": 452,
+          "x": 583,
+          "y": 450,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -46807,12 +47060,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "ktk",
           "name": "ktk_luar",
           "persistentUuid": "51158a78-91f6-4236-9c30-ef9095e3c617",
           "width": 0,
-          "x": 1409,
-          "y": 515,
+          "x": 1400,
+          "y": 450,
           "zOrder": 102,
           "numberProperties": [],
           "stringProperties": [],
@@ -47153,54 +47406,6 @@
           ],
           "animations": [
             {
-              "name": "idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 667.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 213,
-                            "y": 105
-                          },
-                          {
-                            "x": 357,
-                            "y": 105
-                          },
-                          {
-                            "x": 357,
-                            "y": 339
-                          },
-                          {
-                            "x": 213,
-                            "y": 339
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "name": "run",
               "useMultipleDirections": false,
               "directions": [
@@ -47226,20 +47431,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 213,
-                            "y": 105
+                            "x": 201,
+                            "y": 96
                           },
                           {
-                            "x": 357,
-                            "y": 105
+                            "x": 346,
+                            "y": 96
                           },
                           {
-                            "x": 357,
-                            "y": 339
+                            "x": 346,
+                            "y": 330
                           },
                           {
-                            "x": 213,
-                            "y": 339
+                            "x": 201,
+                            "y": 330
                           }
                         ]
                       ]
@@ -47262,20 +47467,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 213,
-                            "y": 105
+                            "x": 201,
+                            "y": 96
                           },
                           {
-                            "x": 357,
-                            "y": 105
+                            "x": 346,
+                            "y": 96
                           },
                           {
-                            "x": 357,
-                            "y": 339
+                            "x": 346,
+                            "y": 330
                           },
                           {
-                            "x": 213,
-                            "y": 339
+                            "x": 201,
+                            "y": 330
                           }
                         ]
                       ]
@@ -47298,20 +47503,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 213,
-                            "y": 105
+                            "x": 201,
+                            "y": 96
                           },
                           {
-                            "x": 357,
-                            "y": 105
+                            "x": 346,
+                            "y": 96
                           },
                           {
-                            "x": 357,
-                            "y": 339
+                            "x": 346,
+                            "y": 330
                           },
                           {
-                            "x": 213,
-                            "y": 339
+                            "x": 201,
+                            "y": 330
                           }
                         ]
                       ]
@@ -47334,20 +47539,68 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 213,
-                            "y": 105
+                            "x": 201,
+                            "y": 96
                           },
                           {
-                            "x": 357,
-                            "y": 105
+                            "x": 346,
+                            "y": 96
                           },
                           {
-                            "x": 357,
-                            "y": 339
+                            "x": 346,
+                            "y": 330
                           },
                           {
-                            "x": 213,
-                            "y": 339
+                            "x": 201,
+                            "y": 330
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 667.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 201,
+                            "y": 96
+                          },
+                          {
+                            "x": 346,
+                            "y": 96
+                          },
+                          {
+                            "x": 346,
+                            "y": 330
+                          },
+                          {
+                            "x": 201,
+                            "y": 330
                           }
                         ]
                       ]
@@ -47373,54 +47626,6 @@
             }
           ],
           "animations": [
-            {
-              "name": "idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 626.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 291,
-                            "y": 0
-                          },
-                          {
-                            "x": 291,
-                            "y": 283
-                          },
-                          {
-                            "x": 0,
-                            "y": 283
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "name": "run",
               "useMultipleDirections": false,
@@ -47456,11 +47661,11 @@
                           },
                           {
                             "x": 291,
-                            "y": 283
+                            "y": 286
                           },
                           {
                             "x": 0,
-                            "y": 283
+                            "y": 286
                           }
                         ]
                       ]
@@ -47492,11 +47697,11 @@
                           },
                           {
                             "x": 291,
-                            "y": 283
+                            "y": 286
                           },
                           {
                             "x": 0,
-                            "y": 283
+                            "y": 286
                           }
                         ]
                       ]
@@ -47528,11 +47733,11 @@
                           },
                           {
                             "x": 291,
-                            "y": 283
+                            "y": 286
                           },
                           {
                             "x": 0,
-                            "y": 283
+                            "y": 286
                           }
                         ]
                       ]
@@ -47564,11 +47769,59 @@
                           },
                           {
                             "x": 291,
-                            "y": 283
+                            "y": 286
                           },
                           {
                             "x": 0,
-                            "y": 283
+                            "y": 286
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 626.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 291,
+                            "y": 0
+                          },
+                          {
+                            "x": 291,
+                            "y": 286
+                          },
+                          {
+                            "x": 0,
+                            "y": 286
                           }
                         ]
                       ]
@@ -48020,54 +48273,6 @@
           ],
           "animations": [
             {
-              "name": "idle1",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 514.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 11,
-                            "y": 1
-                          },
-                          {
-                            "x": 188,
-                            "y": 1
-                          },
-                          {
-                            "x": 188,
-                            "y": 228
-                          },
-                          {
-                            "x": 11,
-                            "y": 228
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "name": "run1",
               "useMultipleDirections": false,
               "directions": [
@@ -48093,20 +48298,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48129,20 +48334,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48165,20 +48370,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48201,20 +48406,68 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "idle1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 514.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16,
+                            "y": 5
+                          },
+                          {
+                            "x": 192,
+                            "y": 5
+                          },
+                          {
+                            "x": 192,
+                            "y": 227
+                          },
+                          {
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48249,20 +48502,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48297,20 +48550,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48333,20 +48586,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48369,20 +48622,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48405,20 +48658,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 1
+                            "x": 16,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 1
+                            "x": 192,
+                            "y": 5
                           },
                           {
-                            "x": 188,
-                            "y": 228
+                            "x": 192,
+                            "y": 227
                           },
                           {
-                            "x": 11,
-                            "y": 228
+                            "x": 16,
+                            "y": 227
                           }
                         ]
                       ]
@@ -48444,54 +48697,6 @@
             }
           ],
           "animations": [
-            {
-              "name": "idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 672.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 174,
-                            "y": 0
-                          },
-                          {
-                            "x": 174,
-                            "y": 298
-                          },
-                          {
-                            "x": 0,
-                            "y": 298
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "name": "run",
               "useMultipleDirections": false,
@@ -48522,16 +48727,16 @@
                             "y": 0
                           },
                           {
-                            "x": 174,
+                            "x": 172,
                             "y": 0
                           },
                           {
-                            "x": 174,
-                            "y": 298
+                            "x": 172,
+                            "y": 299
                           },
                           {
                             "x": 0,
-                            "y": 298
+                            "y": 299
                           }
                         ]
                       ]
@@ -48558,16 +48763,16 @@
                             "y": 0
                           },
                           {
-                            "x": 174,
+                            "x": 172,
                             "y": 0
                           },
                           {
-                            "x": 174,
-                            "y": 298
+                            "x": 172,
+                            "y": 299
                           },
                           {
                             "x": 0,
-                            "y": 298
+                            "y": 299
                           }
                         ]
                       ]
@@ -48594,16 +48799,16 @@
                             "y": 0
                           },
                           {
-                            "x": 174,
+                            "x": 172,
                             "y": 0
                           },
                           {
-                            "x": 174,
-                            "y": 298
+                            "x": 172,
+                            "y": 299
                           },
                           {
                             "x": 0,
-                            "y": 298
+                            "y": 299
                           }
                         ]
                       ]
@@ -48630,16 +48835,64 @@
                             "y": 0
                           },
                           {
-                            "x": 174,
+                            "x": 172,
                             "y": 0
                           },
                           {
-                            "x": 174,
-                            "y": 298
+                            "x": 172,
+                            "y": 299
                           },
                           {
                             "x": 0,
-                            "y": 298
+                            "y": 299
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 672.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 172,
+                            "y": 0
+                          },
+                          {
+                            "x": 172,
+                            "y": 299
+                          },
+                          {
+                            "x": 0,
+                            "y": 299
                           }
                         ]
                       ]
@@ -49585,6 +49838,16 @@
           "actions": [
             {
               "type": {
+                "value": "ArrayTools::Shuffle"
+              },
+              "parameters": [
+                "",
+                "UrutanKarakter",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ReadStringFromStorage"
               },
               "parameters": [
@@ -49720,16 +49983,6 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "ArrayTools::Shuffle"
-              },
-              "parameters": [
-                "",
-                "UrutanKarakter",
-                ""
-              ]
             }
           ],
           "events": [
@@ -49763,29 +50016,34 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "SoundPlaying"
+                "value": "AutoTyping::AutoTyping::IsFinished"
               },
               "parameters": [
-                "",
-                "5"
+                "Teks",
+                "AutoTyping",
+                ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "Teks",
-                "Text",
+                "Counter",
                 "=",
-                "\"Siapakah yang berada di belakang rumah?\""
+                "0"
               ]
             }
           ]
@@ -49795,7 +50053,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Walking Animations",
+          "name": "Randomisasi Karakter",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -49813,7 +50071,18 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Rian\""
+                  ]
+                }
+              ],
               "actions": [
                 {
                   "type": {
@@ -49822,55 +50091,362 @@
                   "parameters": [
                     "Rian",
                     "ktk_rumah",
-                    "200",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Ano",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Gino",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Kiki",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Peni",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
                     "0"
                   ]
                 }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Rian",
-                    "ktk_rumah",
-                    "ktk.X()",
-                    "",
-                    ""
-                  ]
-                }
               ],
-              "actions": [
+              "events": [
                 {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.5"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_rumah",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ktk_rumah",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "ktk_rumah",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Rian",
-                    "Animation",
-                    "=",
-                    "\"idle\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Siapakah yang berada di belakang rumah - ingat aku.wav",
+                        "5",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MusicPlaying"
+                          },
+                          "parameters": [
+                            "",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Teks",
+                            "Text",
+                            "=",
+                            "\"Siapakah yang berada di belakang rumah?\""
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -49889,55 +50465,382 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AddForceVers"
-                  },
-                  "parameters": [
-                    "Gino",
-                    "ktk_luar",
-                    "200",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Gino",
-                    "ktk_luar",
-                    "ktk.X()",
-                    "",
-                    ""
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Gino\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "Wait"
+                    "value": "AddForceVers"
                   },
                   "parameters": [
-                    "0.5"
+                    "Rian",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
                   ]
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Ano",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
                   },
                   "parameters": [
                     "Gino",
-                    "Animation",
-                    "=",
-                    "\"idle\""
+                    "ktk_rumah",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Kiki",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Peni",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_rumah",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ktk_rumah",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Siapakah yang berada di belakang rumah - ingat aku.wav",
+                        "5",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MusicPlaying"
+                          },
+                          "parameters": [
+                            "",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Teks",
+                            "Text",
+                            "=",
+                            "\"Siapakah yang berada di belakang rumah?\""
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -49956,55 +50859,382 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AddForceVers"
-                  },
-                  "parameters": [
-                    "Ano",
-                    "ktk_luar",
-                    "200",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Ano",
-                    "ktk_luar",
-                    "ktk.X()",
-                    "",
-                    ""
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Ano\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "Wait"
+                    "value": "AddForceVers"
                   },
                   "parameters": [
-                    "0.5"
+                    "Rian",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
                   ]
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                    "value": "AddForceVers"
                   },
                   "parameters": [
                     "Ano",
-                    "Animation",
-                    "=",
-                    "\"idle\""
+                    "ktk_rumah",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Gino",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Kiki",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Peni",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_rumah",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ktk_rumah",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Siapakah yang berada di belakang rumah - ingat aku.wav",
+                        "5",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MusicPlaying"
+                          },
+                          "parameters": [
+                            "",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Teks",
+                            "Text",
+                            "=",
+                            "\"Siapakah yang berada di belakang rumah?\""
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -50023,55 +51253,382 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AddForceVers"
-                  },
-                  "parameters": [
-                    "Kiki",
-                    "ktk_luar",
-                    "200",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Kiki",
-                    "ktk_luar",
-                    "ktk.X()",
-                    "",
-                    ""
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Kiki\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "Wait"
+                    "value": "AddForceVers"
                   },
                   "parameters": [
-                    "0.5"
+                    "Rian",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
                   ]
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Ano",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Gino",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
                   },
                   "parameters": [
                     "Kiki",
-                    "Animation",
-                    "=",
-                    "\"idle\""
+                    "ktk_rumah",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Peni",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_rumah",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ktk_rumah",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Siapakah yang berada di belakang rumah - ingat aku.wav",
+                        "5",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MusicPlaying"
+                          },
+                          "parameters": [
+                            "",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Teks",
+                            "Text",
+                            "=",
+                            "\"Siapakah yang berada di belakang rumah?\""
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -50090,55 +51647,376 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AddForceVers"
-                  },
-                  "parameters": [
-                    "Peni",
-                    "ktk_luar",
-                    "200",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Peni",
-                    "ktk_luar",
-                    "ktk.X()",
-                    "",
-                    ""
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Peni\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "Wait"
+                    "value": "AddForceVers"
                   },
                   "parameters": [
-                    "0.5"
+                    "Rian",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
                   ]
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Ano",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Gino",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Kiki",
+                    "ktk_luar",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
                   },
                   "parameters": [
                     "Peni",
-                    "Animation",
-                    "=",
-                    "\"idle\""
+                    "ktk_rumah",
+                    "ArrayTools::RandomNumberInArray(Kecepatan)",
+                    "0"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "ktk_rumah",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ktk_rumah",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Peni",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Kiki",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Gino",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Ano",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Rian",
+                        "ktk_luar",
+                        "ktk.X()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Siapakah yang berada di belakang rumah - ingat aku.wav",
+                        "5",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MusicPlaying"
+                          },
+                          "parameters": [
+                            "",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Teks",
+                            "Text",
+                            "=",
+                            "\"Siapakah yang berada di belakang rumah?\""
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -50881,6 +52759,60 @@
         }
       ],
       "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "ktk",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
         {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,

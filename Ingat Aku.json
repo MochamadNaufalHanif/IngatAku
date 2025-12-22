@@ -10112,7 +10112,7 @@
                 "value": "AutoTyping::AutoTyping::IsFinished"
               },
               "parameters": [
-                "Teks",
+                "Text_pesta",
                 "AutoTyping",
                 ""
               ]
@@ -10148,7 +10148,7 @@
                 "value": "AutoTyping::AutoTyping::RestartFromBeginning"
               },
               "parameters": [
-                "Teks",
+                "Text_pesta",
                 "AutoTyping",
                 "94"
               ]
@@ -10158,7 +10158,7 @@
                 "value": "AutoTyping::AutoTyping::ShowFullText"
               },
               "parameters": [
-                "Teks",
+                "Text_pesta",
                 "AutoTyping",
                 "95"
               ]
@@ -10296,82 +10296,6 @@
             },
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "5"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Oca"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ButtonStates::ButtonFSM::IsClicked"
-              },
-              "parameters": [
-                "KetukManaAja",
-                "ButtonFSM",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AutoTyping::AutoTyping::IsFinished"
-              },
-              "parameters": [
-                "Text_pesta",
-                "AutoTyping",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
-              },
-              "parameters": [
-                "Text_pesta",
-                "Text",
-                "=",
-                "\"Hore! Cici si Kelinci sedang berulang tahun! Lima sahabatnya datang ke pesta dengan memakai topi ulang tahun yang warnanya berbeda. Ayo bantu Cici mengingat nama semua tamunya!\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -10382,16 +10306,6 @@
                 "\"linear\"",
                 "0.5",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "2"
               ]
             },
             {
@@ -10484,12 +10398,25 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "3"
+                "5"
               ]
             }
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Oca"
+        },
+        {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -10499,7 +10426,7 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "3"
+                "5"
               ]
             },
             {
@@ -10598,16 +10525,6 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "4"
-              ]
             }
           ],
           "events": [
@@ -10625,6 +10542,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "KetukManaAja",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
                 {
                   "type": {
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -10650,18 +10577,126 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "4"
+                "5"
               ]
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AutoTyping::AutoTyping::IsFinished"
               },
               "parameters": [
                 "Text_pesta",
-                "Text",
+                "AutoTyping",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
                 "=",
-                "\"Lihat, kelinci dengan topi oranye itu namanya Oca!\""
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "94"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::ShowFullText"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "95"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "7"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
               ]
             },
             {
@@ -10672,6 +10707,39 @@
                 "Text_pesta",
                 "AutoTyping",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "7"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "7"
               ]
             },
             {
@@ -10694,12 +10762,12 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "ActivateBehavior"
               },
               "parameters": [
-                "Nomor",
-                "=",
-                "5"
+                "KetukManaAja",
+                "ButtonFSM",
+                "no"
               ]
             },
             {
@@ -10729,6 +10797,24 @@
                 "0.5",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "8"
+              ]
             }
           ]
         },
@@ -10754,7 +10840,7 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "5"
+                "8"
               ]
             },
             {
@@ -10777,16 +10863,6 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "6"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -10806,16 +10882,6 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "6"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::HasFinished"
               },
               "parameters": [
@@ -10832,16 +10898,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "7"
-              ]
-            },
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectPositionTween2"
@@ -10928,16 +10984,6 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "8"
-              ]
             }
           ],
           "events": [
@@ -10955,6 +11001,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "KetukManaAja",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
                 {
                   "type": {
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -10985,32 +11041,22 @@
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
-              },
-              "parameters": [
-                "Text_pesta",
-                "Text",
-                "=",
-                "\"Itu Mia! Ia pakai topi merah.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "AutoTyping::AutoTyping::IsFinished"
-              },
-              "parameters": [
-                "Text_pesta",
-                "AutoTyping",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ButtonStates::ButtonFSM::IsClicked"
               },
               "parameters": [
                 "KetukManaAja",
                 "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AutoTyping::AutoTyping::IsFinished"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
                 ""
               ]
             },
@@ -11032,6 +11078,147 @@
                 "9"
               ]
             },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "94"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::ShowFullText"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "95"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "10"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "8"
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::IsFinished"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "10"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
@@ -11059,6 +11246,24 @@
                 "0.5",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "11"
+              ]
             }
           ]
         },
@@ -11084,7 +11289,7 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "9"
+                "11"
               ]
             },
             {
@@ -11107,16 +11312,6 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "10"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -11136,16 +11331,6 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "10"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::HasFinished"
               },
               "parameters": [
@@ -11162,16 +11347,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "11"
-              ]
-            },
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectPositionTween2"
@@ -11258,16 +11433,6 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "12"
-              ]
             }
           ],
           "events": [
@@ -11285,6 +11450,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "KetukManaAja",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
                 {
                   "type": {
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -11310,22 +11485,22 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "12"
+                "11"
               ]
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                "value": "ButtonStates::ButtonFSM::IsClicked"
               },
               "parameters": [
-                "Text_pesta",
-                "Text",
-                "=",
-                "\"Yang ini Una. Ia pakai topi ungu!\""
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
               ]
             },
             {
               "type": {
+                "inverted": true,
                 "value": "AutoTyping::AutoTyping::IsFinished"
               },
               "parameters": [
@@ -11336,11 +11511,109 @@
             },
             {
               "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "12"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "94"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::ShowFullText"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "95"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "13"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "11"
+              ]
+            },
+            {
+              "type": {
                 "value": "ButtonStates::ButtonFSM::IsClicked"
               },
               "parameters": [
                 "KetukManaAja",
                 "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::IsFinished"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
                 ""
               ]
             },
@@ -11361,7 +11634,40 @@
                 "=",
                 "13"
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "13"
+              ]
             },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
@@ -11389,6 +11695,24 @@
                 "0.5",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "14"
+              ]
             }
           ]
         },
@@ -11414,7 +11738,7 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "13"
+                "14"
               ]
             },
             {
@@ -11437,16 +11761,6 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "14"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -11466,16 +11780,6 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "14"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::HasFinished"
               },
               "parameters": [
@@ -11492,16 +11796,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "15"
-              ]
-            },
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectPositionTween2"
@@ -11588,16 +11882,6 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "16"
-              ]
             }
           ],
           "events": [
@@ -11615,6 +11899,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "KetukManaAja",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
                 {
                   "type": {
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -11640,18 +11934,126 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "16"
+                "14"
               ]
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AutoTyping::AutoTyping::IsFinished"
               },
               "parameters": [
                 "Text_pesta",
-                "Text",
+                "AutoTyping",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
                 "=",
-                "\"Nah, kalau yang bertopi biru, namanya Bina!\""
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "94"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::ShowFullText"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "95"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "16"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "14"
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
               ]
             },
             {
@@ -11662,6 +12064,39 @@
                 "Text_pesta",
                 "AutoTyping",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "16"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "16"
               ]
             },
             {
@@ -11682,16 +12117,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "17"
-              ]
-            },
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
@@ -11718,6 +12143,24 @@
                 "\"linear\"",
                 "0.5",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "17"
               ]
             }
           ]
@@ -11767,16 +12210,6 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "18"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -11796,22 +12229,12 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "18"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::HasFinished"
               },
               "parameters": [
-                "Bina",
+                "Hani",
                 "Tween",
-                "\"Perkenalan_Bina\""
+                "\"Perkenalan_Hani\""
               ]
             },
             {
@@ -11824,20 +12247,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "19"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectPositionTween2"
               },
               "parameters": [
-                "Bina",
+                "Hani",
                 "Tween",
                 "\"Geser\"",
                 "500",
@@ -11852,7 +12265,7 @@
                 "value": "Tween::TweenBehavior::AddObjectScaleTween3"
               },
               "parameters": [
-                "Bina",
+                "Hani",
                 "Tween",
                 "\"\"",
                 "1.35",
@@ -11867,7 +12280,7 @@
                 "value": "ChangePlan"
               },
               "parameters": [
-                "Bina",
+                "Hani",
                 "+",
                 "10"
               ]
@@ -11918,16 +12331,6 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "20"
-              ]
             }
           ],
           "events": [
@@ -11945,6 +12348,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "KetukManaAja",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
                 {
                   "type": {
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -11970,18 +12383,126 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "20"
+                "17"
               ]
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AutoTyping::AutoTyping::IsFinished"
               },
               "parameters": [
                 "Text_pesta",
-                "Text",
+                "AutoTyping",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
                 "=",
-                "\"Dan yang terakhir, Hani! Ia pakai topi hijau!\""
+                "18"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "94"
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::ShowFullText"
+              },
+              "parameters": [
+                "Text_pesta",
+                "AutoTyping",
+                "95"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "19"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "17"
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KetukManaAja",
+                "ButtonFSM",
+                ""
               ]
             },
             {
@@ -11992,6 +12513,39 @@
                 "Text_pesta",
                 "AutoTyping",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "19"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "19"
               ]
             },
             {
@@ -12012,16 +12566,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Nomor",
-                "=",
-                "21"
-              ]
-            },
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
@@ -12049,6 +12593,24 @@
                 "0.5",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Nomor",
+                "=",
+                "20"
+              ]
             }
           ]
         },
@@ -12074,7 +12636,7 @@
               "parameters": [
                 "Nomor",
                 "=",
-                "21"
+                "20"
               ]
             },
             {
@@ -28758,7 +29320,7 @@
           "opacity": 0,
           "persistentUuid": "ca94cf11-46f1-43f4-8e85-751c878a1474",
           "width": 291,
-          "x": 125,
+          "x": -350,
           "y": 330,
           "zOrder": 3,
           "numberProperties": [],
@@ -34188,56 +34750,6 @@
             },
             {
               "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Peni",
-                "ButtonFSM",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Kiki",
-                "ButtonFSM",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Gino",
-                "ButtonFSM",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Ano",
-                "ButtonFSM",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Rian",
-                "ButtonFSM",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "MettreY"
               },
               "parameters": [
@@ -34284,6 +34796,56 @@
                 "Peni_Kenalan",
                 "=",
                 "1000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Peni",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Kiki",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Gino",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Ano",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Rian",
+                "ButtonFSM",
+                ""
               ]
             }
           ]
@@ -34478,22 +35040,11 @@
           "conditions": [
             {
               "type": {
-                "value": "Tween::HasFinished"
+                "value": "MusicStopped"
               },
               "parameters": [
-                "ObjekPertanyaan78910",
-                "Tween",
-                "\"Muncul\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Pertanyaan_TC",
-                "True",
-                ""
+                "",
+                "5"
               ]
             },
             {
@@ -34503,6 +35054,16 @@
               "parameters": [
                 "Pertanyaan_PG",
                 "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Pertanyaan_TC",
+                "True",
                 ""
               ]
             },
@@ -34567,6 +35128,126 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "MusicStopped"
+                  },
+                  "parameters": [
+                    "",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Flash_Salah"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "CahayaBintang",
+                    "Tween",
+                    "\"Hilang\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Pertanyaan_PG",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Pertanyaan_TC",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Peni",
+                "ButtonFSM",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Kiki",
+                "ButtonFSM",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Gino",
+                "ButtonFSM",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Ano",
+                "ButtonFSM",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Rian",
+                "ButtonFSM",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -34583,6 +35264,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Logic Quiz",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34592,6 +35274,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "PG",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -40165,6 +40848,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "TouchClick",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -44273,7 +44957,6 @@
                   "comment": ""
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -45096,6 +45779,18 @@
                   ]
                 },
                 {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": ""
+                },
+                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -45253,6 +45948,16 @@
           "actions": [
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Pertanyaan_SaatIni",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
                 "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
               },
               "parameters": [
@@ -45336,6 +46041,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Setting",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -84164,6 +84870,125 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.5117784035210173,
+        "windowMask": false,
+        "selectedLayer": ""
+      }
+    },
+    {
+      "associatedLayout": "Level3 (Ingat Yang Lewat)",
+      "name": "Tebak1",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Gino",
+          "persistentUuid": "5b45ced2-cfd3-4717-95b9-22801986674e",
+          "width": 0,
+          "x": 1002,
+          "y": 472,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Peni",
+          "persistentUuid": "a6030b90-8be0-4f52-95fd-428a29b0ffad",
+          "width": 0,
+          "x": 701,
+          "y": 497,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Ano",
+          "persistentUuid": "e46b1479-705a-4ed3-9bd3-eec5e0cbcf9b",
+          "width": 0,
+          "x": 311,
+          "y": 484,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Rian",
+          "persistentUuid": "9aad4269-8fbd-4e7d-b494-4e7e6717f08b",
+          "width": 0,
+          "x": 3,
+          "y": 476,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Kiki",
+          "persistentUuid": "1df397f8-f626-4413-8d47-46afd74e52b3",
+          "width": 0,
+          "x": 352,
+          "y": 161,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 142,
+          "keepRatio": true,
+          "layer": "",
+          "name": "KotakPesan",
+          "persistentUuid": "75b4cee1-0e03-4665-a498-8febbc40c294",
+          "width": 1231,
+          "x": 27,
+          "y": 20,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
         "windowMask": false,
         "selectedLayer": ""
       }

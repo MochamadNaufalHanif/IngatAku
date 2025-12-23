@@ -1820,6 +1820,94 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Peni2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Peni2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Peni1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Peni1",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Rian1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Rian1",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Rian2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Rian2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Frame 728.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Frame 728.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Frame 728-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Frame 728-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Frame 728-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Frame 728-3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Frame 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Frame 4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Frame 730.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Frame 730.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Frame 729.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Frame 729.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Frame 728-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Frame 728-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -6001,7 +6089,7 @@
           "persistentUuid": "c446d470-4ac0-43f6-b0f2-779b14da269a",
           "width": 0,
           "x": 285,
-          "y": -261,
+          "y": -660,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -6017,7 +6105,7 @@
           "persistentUuid": "91562854-7120-4897-a606-dafb1695d54b",
           "width": 0,
           "x": 285,
-          "y": -260,
+          "y": -460,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -6790,16 +6878,8 @@
                 "\"Masuk\"",
                 "485",
                 "\"easeOutQuad\"",
-                "1",
+                "0.5",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.5"
               ]
             },
             {
@@ -6812,16 +6892,8 @@
                 "\"Masuk\"",
                 "255",
                 "\"easeOutQuad\"",
-                "1",
+                "0.75",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.5"
               ]
             },
             {
@@ -6836,224 +6908,6 @@
                 "\"easeOutQuad\"",
                 "1",
                 ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "GameStorage.Benar[0]",
-                ">",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "GameStorage.LevelSelesai[0]",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Level2",
-                "Animation",
-                "=",
-                "\"Unlock\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Level2",
-                "ButtonScaleTween",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierTxt"
-              },
-              "parameters": [
-                "\"GameStorage\"",
-                "\"SavingSystemLevel\"",
-                "ToJSON(GameStorage)"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "Level2",
-                "Animation",
-                "=",
-                "\"Lock\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Level2",
-                "Animation",
-                "=",
-                "\"Lock\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Level2",
-                "ButtonScaleTween",
-                "no"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "GameStorage.Benar[1]",
-                ">",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "GameStorage.LevelSelesai[1]",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Level3",
-                "Animation",
-                "=",
-                "\"Unlock\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Level3",
-                "ButtonScaleTween",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierTxt"
-              },
-              "parameters": [
-                "\"GameStorage\"",
-                "\"SavingSystemLevel\"",
-                "ToJSON(GameStorage)"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "Level3",
-                "Animation",
-                "=",
-                "\"Lock\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Level3",
-                "Animation",
-                "=",
-                "\"Lock\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Level3",
-                "ButtonScaleTween",
-                "no"
               ]
             }
           ]
@@ -7105,6 +6959,248 @@
                 "\"easeOutQuad\"",
                 "0.5",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStorage.Benar[0]",
+                ">",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "GameStorage.LevelSelesai[0]",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Level2",
+                "Animation",
+                "=",
+                "\"Unlock\""
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "\"GameStorage\"",
+                "\"SavingSystemLevel\"",
+                "ToJSON(GameStorage)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Level2",
+                "ButtonFSM",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Level2",
+                "Animation",
+                "=",
+                "\"Lock\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Level2",
+                "Animation",
+                "=",
+                "\"Lock\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Level2",
+                "ButtonFSM",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStorage.Benar[1]",
+                ">",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "GameStorage.LevelSelesai[1]",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Level3",
+                "Animation",
+                "=",
+                "\"Unlock\""
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "\"GameStorage\"",
+                "\"SavingSystemLevel\"",
+                "ToJSON(GameStorage)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Level3",
+                "ButtonFSM",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Level3",
+                "Animation",
+                "=",
+                "\"Lock\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Level3",
+                "Animation",
+                "=",
+                "\"Lock\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Level3",
+                "ButtonFSM",
+                "no"
               ]
             }
           ]
@@ -8620,16 +8716,6 @@
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
-                        "button_level",
-                        "ButtonFSM",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
                         "Button_Setting",
                         "ButtonFSM",
                         "yes"
@@ -8641,6 +8727,16 @@
                       },
                       "parameters": [
                         "Button_Back",
+                        "ButtonFSM",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "button_level",
                         "ButtonFSM",
                         "yes"
                       ]
@@ -9805,16 +9901,6 @@
               "parameters": [
                 "temp",
                 "GameStorage"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierTxt"
-              },
-              "parameters": [
-                "\"GameStorage\"",
-                "\"SavingSystemLevel\"",
-                "ToJSON(GameStorage)"
               ]
             },
             {
@@ -15614,16 +15700,6 @@
             },
             {
               "type": {
-                "value": "EcrireFichierTxt"
-              },
-              "parameters": [
-                "\"GameStorage\"",
-                "\"SavingSystemLevel\"",
-                "ToJSON(GameStorage)"
-              ]
-            },
-            {
-              "type": {
                 "value": "EnableLayerEffect"
               },
               "parameters": [
@@ -19971,6 +20047,16 @@
                     "=",
                     "150"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"GameStorage\"",
+                    "\"SavingSystemLevel\"",
+                    "ToJSON(GameStorage)"
+                  ]
                 }
               ],
               "events": [
@@ -20165,6 +20251,16 @@
                     "Opacity",
                     "=",
                     "150"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"GameStorage\"",
+                    "\"SavingSystemLevel\"",
+                    "ToJSON(GameStorage)"
                   ]
                 }
               ],
@@ -20361,6 +20457,16 @@
                     "=",
                     "150"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"GameStorage\"",
+                    "\"SavingSystemLevel\"",
+                    "ToJSON(GameStorage)"
+                  ]
                 }
               ],
               "events": [
@@ -20544,6 +20650,16 @@
                     "Opacity",
                     "=",
                     "150"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"GameStorage\"",
+                    "\"SavingSystemLevel\"",
+                    "ToJSON(GameStorage)"
                   ]
                 }
               ],
@@ -20739,6 +20855,16 @@
                     "Opacity",
                     "=",
                     "150"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"GameStorage\"",
+                    "\"SavingSystemLevel\"",
+                    "ToJSON(GameStorage)"
                   ]
                 }
               ],
@@ -24388,16 +24514,6 @@
               "parameters": [
                 "temp",
                 "GameStorage"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierTxt"
-              },
-              "parameters": [
-                "\"GameStorage\"",
-                "\"SavingSystemLevel\"",
-                "ToJSON(GameStorage)"
               ]
             },
             {
@@ -28113,7 +28229,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Setting",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -29178,6 +29293,11 @@
           "name": "cnt",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "transisi_awalan",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -34141,16 +34261,6 @@
             },
             {
               "type": {
-                "value": "EcrireFichierTxt"
-              },
-              "parameters": [
-                "\"GameStorage\"",
-                "\"SavingSystemLevel\"",
-                "ToJSON(GameStorage)"
-              ]
-            },
-            {
-              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
@@ -34391,6 +34501,16 @@
             },
             {
               "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "transisi_awalan",
+                "=",
+                "\"Kuis1 Gino\""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -34404,6 +34524,16 @@
               "parameters": [
                 "Nomor",
                 "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "transisi_awalan",
+                "True",
                 "1"
               ]
             }
@@ -35145,25 +35275,6 @@
                     "",
                     "5"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "Visible"
-                  },
-                  "parameters": [
-                    "Flash_Salah"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "CahayaBintang",
-                    "Tween",
-                    "\"Hilang\""
-                  ]
                 }
               ]
             },
@@ -35264,7 +35375,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Logic Quiz",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -35274,7 +35384,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "PG",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -36360,6 +36469,7 @@
                   "comment": "4"
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -39779,6 +39889,16 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
+                      ]
                     }
                   ],
                   "events": [
@@ -39962,6 +40082,16 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ],
@@ -40147,6 +40277,16 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
+                      ]
                     }
                   ],
                   "events": [
@@ -40330,6 +40470,16 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ],
@@ -40515,6 +40665,16 @@
                         "=",
                         "150"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
+                      ]
                     }
                   ],
                   "events": [
@@ -40698,6 +40858,16 @@
                         "Opacity",
                         "=",
                         "150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ],
@@ -41008,6 +41178,16 @@
                     },
                     {
                       "type": {
+                        "inverted": true,
+                        "value": "MusicStopped"
+                      },
+                      "parameters": [
+                        "",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
@@ -41248,6 +41428,16 @@
                         "ObjekPertanyaan78910",
                         "Tween",
                         "\"Muncul\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "MusicStopped"
+                      },
+                      "parameters": [
+                        "",
+                        "5"
                       ]
                     },
                     {
@@ -41496,6 +41686,16 @@
                     },
                     {
                       "type": {
+                        "inverted": true,
+                        "value": "MusicStopped"
+                      },
+                      "parameters": [
+                        "",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
@@ -41736,6 +41936,16 @@
                         "ObjekPertanyaan78910",
                         "Tween",
                         "\"Muncul\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "MusicStopped"
+                      },
+                      "parameters": [
+                        "",
+                        "5"
                       ]
                     },
                     {
@@ -45103,6 +45313,16 @@
                         "=",
                         "1"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
+                      ]
                     }
                   ],
                   "events": [
@@ -45289,6 +45509,16 @@
                         "Klik",
                         "=",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ],
@@ -45477,6 +45707,16 @@
                         "=",
                         "1"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
+                      ]
                     }
                   ],
                   "events": [
@@ -45663,6 +45903,16 @@
                         "Klik",
                         "=",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ],
@@ -47251,10 +47501,22 @@
       },
       "objectsGroups": [
         {
-          "name": "Karakter²",
+          "name": "Button²Jawaban",
           "objects": [
             {
-              "name": "Kiki"
+              "name": "Btn_Kiki"
+            },
+            {
+              "name": "Btn_Rian"
+            },
+            {
+              "name": "Btn_Ano"
+            },
+            {
+              "name": "Btn_Peni"
+            },
+            {
+              "name": "Btn_Gino"
             }
           ]
         }
@@ -47293,9 +47555,14 @@
           ]
         },
         {
+          "folded": true,
           "name": "UrutanKarakter",
           "type": "array",
           "children": [
+            {
+              "type": "string",
+              "value": "Peni"
+            },
             {
               "type": "string",
               "value": "Rian"
@@ -47310,11 +47577,104 @@
             },
             {
               "type": "string",
-              "value": "Peni"
+              "value": "Kiki"
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "UrutanTempat",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": -400
+            },
+            {
+              "type": "number",
+              "value": -600
+            },
+            {
+              "type": "number",
+              "value": -800
+            },
+            {
+              "type": "number",
+              "value": -1000
+            },
+            {
+              "type": "number",
+              "value": -1200
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Kecepatan",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 400
+            },
+            {
+              "type": "number",
+              "value": 425
+            },
+            {
+              "type": "number",
+              "value": 450
+            },
+            {
+              "type": "number",
+              "value": 475
+            },
+            {
+              "type": "number",
+              "value": 500
+            },
+            {
+              "type": "number",
+              "value": 525
+            },
+            {
+              "type": "number",
+              "value": 550
+            },
+            {
+              "type": "number",
+              "value": 575
+            },
+            {
+              "type": "number",
+              "value": 600
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "AcakJenis",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "Dua"
             },
             {
               "type": "string",
-              "value": "Kiki"
+              "value": "Satu"
+            },
+            {
+              "type": "string",
+              "value": "Satu"
+            },
+            {
+              "type": "string",
+              "value": "Dua"
+            },
+            {
+              "type": "string",
+              "value": "Satu"
             }
           ]
         },
@@ -47327,59 +47687,6 @@
           "name": "Counter",
           "type": "number",
           "value": 6
-        },
-        {
-          "folded": true,
-          "name": "Giliran",
-          "type": "array",
-          "children": [
-            {
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "type": "string",
-              "value": "0"
-            }
-          ]
-        },
-        {
-          "name": "Kecepatan",
-          "type": "array",
-          "children": [
-            {
-              "type": "number",
-              "value": 400
-            },
-            {
-              "type": "number",
-              "value": 450
-            },
-            {
-              "type": "number",
-              "value": 500
-            },
-            {
-              "type": "number",
-              "value": 550
-            },
-            {
-              "type": "number",
-              "value": 600
-            }
-          ]
         }
       ],
       "instances": [
@@ -47394,7 +47701,7 @@
           "width": 1280,
           "x": 0,
           "y": 0,
-          "zOrder": 3,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -47426,7 +47733,7 @@
           "width": 0,
           "x": 325,
           "y": 165,
-          "zOrder": 100,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -47585,8 +47892,8 @@
           "name": "Kiki",
           "persistentUuid": "a0132778-8529-4859-9dbd-a6888392f6fd",
           "width": 0,
-          "x": -419,
-          "y": 248,
+          "x": -556,
+          "y": 247,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -47601,8 +47908,8 @@
           "name": "Gino",
           "persistentUuid": "2590e1e9-0a5b-4e37-b5ec-75d4cce7e6a0",
           "width": 0,
-          "x": -864,
-          "y": 322,
+          "x": -1043,
+          "y": 325,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -47617,8 +47924,8 @@
           "name": "Rian",
           "persistentUuid": "d97d5196-914c-4043-9983-9f56468bf1c3",
           "width": 0,
-          "x": -612,
-          "y": 343,
+          "x": -737,
+          "y": 377,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -47633,8 +47940,8 @@
           "name": "Ano",
           "persistentUuid": "6bbc791a-d5d2-4fc7-970e-5160e56e60e1",
           "width": 0,
-          "x": -428,
-          "y": 337,
+          "x": -557,
+          "y": 362,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -47650,8 +47957,8 @@
           "name": "Peni",
           "persistentUuid": "2e747c90-2ac8-428f-b8bd-aafeb60107ac",
           "width": 0,
-          "x": -1002,
-          "y": 301,
+          "x": -1251,
+          "y": 306,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -49655,11 +49962,12 @@
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 722.png",
+                      "image": "Peni1",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -49676,11 +49984,11 @@
                         [
                           {
                             "x": 148,
-                            "y": 105
+                            "y": 106
                           },
                           {
                             "x": 424,
-                            "y": 105
+                            "y": 106
                           },
                           {
                             "x": 424,
@@ -49703,11 +50011,12 @@
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 715.png",
+                      "image": "Peni2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -49724,11 +50033,11 @@
                         [
                           {
                             "x": 148,
-                            "y": 105
+                            "y": 106
                           },
                           {
                             "x": 424,
-                            "y": 105
+                            "y": 106
                           },
                           {
                             "x": 424,
@@ -49793,11 +50102,12 @@
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 718.png",
+                      "image": "Frame 728.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -49813,20 +50123,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 149,
+                            "y": 131
                           },
                           {
-                            "x": 276,
-                            "y": 0
+                            "x": 425,
+                            "y": 131
                           },
                           {
-                            "x": 276,
-                            "y": 245
+                            "x": 425,
+                            "y": 376
                           },
                           {
-                            "x": 0,
-                            "y": 245
+                            "x": 149,
+                            "y": 376
                           }
                         ]
                       ]
@@ -49841,11 +50151,12 @@
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 727.png",
+                      "image": "Frame 728-2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -49861,20 +50172,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 149,
+                            "y": 131
                           },
                           {
-                            "x": 276,
-                            "y": 0
+                            "x": 425,
+                            "y": 131
                           },
                           {
-                            "x": 276,
-                            "y": 245
+                            "x": 425,
+                            "y": 376
                           },
                           {
-                            "x": 0,
-                            "y": 245
+                            "x": 149,
+                            "y": 376
                           }
                         ]
                       ]
@@ -49935,7 +50246,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 724.png",
+                      "image": "Frame 728-3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -49951,20 +50262,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 1
+                            "x": 149,
+                            "y": 137
                           },
                           {
-                            "x": 276,
-                            "y": 1
+                            "x": 425,
+                            "y": 137
                           },
                           {
-                            "x": 276,
-                            "y": 236
+                            "x": 425,
+                            "y": 372
                           },
                           {
-                            "x": 0,
-                            "y": 236
+                            "x": 149,
+                            "y": 372
                           }
                         ]
                       ]
@@ -49983,7 +50294,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 725.png",
+                      "image": "Frame 4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -49999,20 +50310,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 1
+                            "x": 149,
+                            "y": 137
                           },
                           {
-                            "x": 276,
-                            "y": 1
+                            "x": 425,
+                            "y": 137
                           },
                           {
-                            "x": 276,
-                            "y": 236
+                            "x": 425,
+                            "y": 372
                           },
                           {
-                            "x": 0,
-                            "y": 236
+                            "x": 149,
+                            "y": 372
                           }
                         ]
                       ]
@@ -50073,7 +50384,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 717.png",
+                      "image": "Frame 730.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -50089,20 +50400,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 149,
+                            "y": 175
                           },
                           {
-                            "x": 276,
-                            "y": 0
+                            "x": 425,
+                            "y": 175
                           },
                           {
-                            "x": 276,
-                            "y": 221
+                            "x": 425,
+                            "y": 377
                           },
                           {
-                            "x": 0,
-                            "y": 221
+                            "x": 149,
+                            "y": 377
                           }
                         ]
                       ]
@@ -50121,7 +50432,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 716.png",
+                      "image": "Frame 729.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -50137,20 +50448,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 149,
+                            "y": 175
                           },
                           {
-                            "x": 276,
-                            "y": 0
+                            "x": 425,
+                            "y": 175
                           },
                           {
-                            "x": 276,
-                            "y": 221
+                            "x": 425,
+                            "y": 377
                           },
                           {
-                            "x": 0,
-                            "y": 221
+                            "x": 149,
+                            "y": 377
                           }
                         ]
                       ]
@@ -50211,7 +50522,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 726.png",
+                      "image": "Frame 728-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -50227,20 +50538,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 149,
+                            "y": 131
                           },
                           {
-                            "x": 276,
-                            "y": 0
+                            "x": 425,
+                            "y": 131
                           },
                           {
-                            "x": 276,
-                            "y": 246
+                            "x": 425,
+                            "y": 377
                           },
                           {
-                            "x": 0,
-                            "y": 246
+                            "x": 149,
+                            "y": 377
                           }
                         ]
                       ]
@@ -50372,6 +50683,102 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Btn",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Diisi",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1.05,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Frame 728-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 149,
+                            "y": 131
+                          },
+                          {
+                            "x": 425,
+                            "y": 131
+                          },
+                          {
+                            "x": 425,
+                            "y": 377
+                          },
+                          {
+                            "x": 149,
+                            "y": 377
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -50418,6 +50825,9 @@
           },
           {
             "objectName": "Btn_Gino"
+          },
+          {
+            "objectName": "Btn"
           }
         ]
       },
@@ -50542,16 +50952,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "ArrayTools::Shuffle"
-              },
-              "parameters": [
-                "",
-                "UrutanKarakter",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "ReadStringFromStorage"
@@ -50753,6 +51153,158 @@
               ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Randomisasi Rumah",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanRumah[Counter]",
+                    "=",
+                    "\"Kucing\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Rumah",
+                    "Animation",
+                    "=",
+                    "\"Kucing\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanRumah[Counter]",
+                    "=",
+                    "\"Rubah\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Rumah",
+                    "Animation",
+                    "=",
+                    "\"Rubah\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanRumah[Counter]",
+                    "=",
+                    "\"Anjing\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Rumah",
+                    "Animation",
+                    "=",
+                    "\"Anjing\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanRumah[Counter]",
+                    "=",
+                    "\"Gajah\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Rumah",
+                    "Animation",
+                    "=",
+                    "\"Gajah\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanRumah[Counter]",
+                    "=",
+                    "\"Kelinci\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Rumah",
+                    "Animation",
+                    "=",
+                    "\"Kelinci\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -51154,6 +51706,252 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::Value"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "Text",
+                        "=",
+                        "\"Siapakah yang berada di belakang rumah?\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AutoTyping::AutoTyping::IsFinished"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "AutoTyping",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Tebak\"",
+                        "0",
+                        "0",
+                        "30"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"create\"",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Button²Jawaban",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Rian",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Peni",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Kiki",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -51543,6 +52341,252 @@
                             "Text",
                             "=",
                             "\"Siapakah yang berada di belakang rumah?\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::Value"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "Text",
+                        "=",
+                        "\"Siapakah yang berada di belakang rumah?\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AutoTyping::AutoTyping::IsFinished"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "AutoTyping",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Tebak\"",
+                        "0",
+                        "0",
+                        "30"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"create\"",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Button²Jawaban",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Gino",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Kiki",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Rian",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
                           ]
                         }
                       ]
@@ -51942,6 +52986,274 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::Value"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "Text",
+                        "=",
+                        "\"Siapakah yang berada di belakang rumah?\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AutoTyping::AutoTyping::IsFinished"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "AutoTyping",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Tebak\"",
+                        "0",
+                        "0",
+                        "30"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"create\"",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Button²Jawaban",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Btn_Ano",
+                            "Animation",
+                            "=",
+                            "\"Ano1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Ano",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Btn_Ano",
+                            "Animation",
+                            "=",
+                            "\"Ano2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Ano",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Peni",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -52336,6 +53648,263 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::Value"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "Text",
+                        "=",
+                        "\"Siapakah yang berada di belakang rumah?\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AutoTyping::AutoTyping::IsFinished"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "AutoTyping",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Tebak\"",
+                        "0",
+                        "0",
+                        "30"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"create\"",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Button²Jawaban",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Btn_Kiki",
+                            "Animation",
+                            "=",
+                            "Kiki.Animation::Name()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Kiki",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Ano",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Gino",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -52724,6 +54293,274 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::Value"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "Text",
+                        "=",
+                        "\"Siapakah yang berada di belakang rumah?\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AutoTyping::AutoTyping::IsFinished"
+                      },
+                      "parameters": [
+                        "Teks",
+                        "AutoTyping",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Tebak\"",
+                        "0",
+                        "0",
+                        "30"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"create\"",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Button²Jawaban",
+                        "Tween",
+                        "\"Muncul\"",
+                        "255",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Btn_Peni",
+                            "Animation",
+                            "=",
+                            "\"Peni1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Peni",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Btn_Peni",
+                            "Animation",
+                            "=",
+                            "\"Peni2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Peni",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "Btn"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Btn_Kiki",
+                            "=",
+                            "Btn.X()",
+                            "=",
+                            "Btn.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Btn",
+                            "Diisi",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -52731,66 +54568,48 @@
           "parameters": []
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
+          "colorB": 74,
+          "colorG": 74,
+          "colorR": 228,
           "creationTime": 0,
-          "name": "",
+          "name": "Salah",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Rian"
+            },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "Tween::HasFinished"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Rian",
-                    "Tween",
-                    "\"Running\""
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Rian\""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Tween::HasFinished"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
-                    "Gino",
-                    "Tween",
-                    "\"Running\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "Ano",
-                    "Tween",
-                    "\"Running\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "Kiki",
-                    "Tween",
-                    "\"Running\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "Peni",
-                    "Tween",
-                    "\"Running\""
+                    "Btn_Peni",
+                    "ButtonFSM",
+                    ""
                   ]
                 },
                 {
@@ -52803,40 +54622,15 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                    "value": "PlaySoundCanal"
                   },
                   "parameters": [
-                    "KotakPesan",
-                    "Tween",
-                    "\"Muncul\"",
-                    "255",
-                    "\"linear\"",
-                    "1",
+                    "",
+                    "jawaban salah - ingat aku.wav",
+                    "2",
+                    "",
+                    "",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                  },
-                  "parameters": [
-                    "Teks",
-                    "Tween",
-                    "\"Muncul\"",
-                    "255",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Nomor",
-                    "=",
-                    "1"
                   ]
                 },
                 {
@@ -52844,9 +54638,29 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "KetukManaAja",
+                    "Button²Jawaban",
                     "ButtonFSM",
-                    "yes"
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    "Opacity",
+                    "=",
+                    "150"
                   ]
                 }
               ],
@@ -52856,28 +54670,491 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "MusicPlaying"
+                        "value": "AjoutObjConcern"
                       },
                       "parameters": [
                         "",
-                        "5"
+                        "ObjekPertanyaan1"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "ActivateBehavior"
+                        "value": "Wait"
                       },
                       "parameters": [
-                        "Teks",
-                        "AutoTyping",
-                        "yes"
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan1",
+                        "Tween",
+                        "\"Hilang\"",
+                        "0",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ObjekPertanyaan1",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Pertanyaan_SaatIni",
+                        "+",
+                        "1"
                       ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Rian\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Btn_Kiki",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "jawaban salah - ingat aku.wav",
+                    "2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Button²Jawaban",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Flash_Salah",
+                    "Opacity",
+                    "=",
+                    "150"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "Button²Jawaban"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Button_Setting",
+                        "Tween",
+                        "\"Hilang\"",
+                        "0",
+                        "\"easeOutQuad\"",
+                        "0.5",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Button²Jawaban",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Gino"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Gino\""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Ano"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Ano\""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Kiki"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Kiki\""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Peni"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Peni\""
+                  ]
+                }
+              ],
+              "actions": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 74,
+          "colorG": 228,
+          "colorR": 129,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Benar",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Rian"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Rian\""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Gino"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Gino\""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Ano"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Ano\""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Kiki"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Kiki\""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Peni"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "UrutanKarakter[Counter]",
+                    "=",
+                    "\"Peni\""
+                  ]
+                }
+              ],
+              "actions": []
             }
           ],
           "parameters": []
@@ -84876,7 +87153,7 @@
     },
     {
       "associatedLayout": "Level3 (Ingat Yang Lewat)",
-      "name": "Tebak1",
+      "name": "Tebak",
       "instances": [
         {
           "angle": 0,
@@ -84885,11 +87162,12 @@
           "keepRatio": true,
           "layer": "",
           "name": "Btn_Gino",
+          "opacity": 0,
           "persistentUuid": "5b45ced2-cfd3-4717-95b9-22801986674e",
           "width": 0,
-          "x": 1002,
-          "y": 472,
-          "zOrder": 1,
+          "x": 655,
+          "y": 735,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -84901,11 +87179,12 @@
           "keepRatio": true,
           "layer": "",
           "name": "Btn_Peni",
+          "opacity": 0,
           "persistentUuid": "a6030b90-8be0-4f52-95fd-428a29b0ffad",
           "width": 0,
-          "x": 701,
-          "y": 497,
-          "zOrder": 2,
+          "x": 381,
+          "y": 735,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -84917,11 +87196,12 @@
           "keepRatio": true,
           "layer": "",
           "name": "Btn_Ano",
+          "opacity": 0,
           "persistentUuid": "e46b1479-705a-4ed3-9bd3-eec5e0cbcf9b",
           "width": 0,
-          "x": 311,
-          "y": 484,
-          "zOrder": 3,
+          "x": 105,
+          "y": 735,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -84933,11 +87213,12 @@
           "keepRatio": true,
           "layer": "",
           "name": "Btn_Rian",
+          "opacity": 0,
           "persistentUuid": "9aad4269-8fbd-4e7d-b494-4e7e6717f08b",
           "width": 0,
-          "x": 3,
-          "y": 476,
-          "zOrder": 4,
+          "x": -170,
+          "y": 735,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -84949,29 +87230,152 @@
           "keepRatio": true,
           "layer": "",
           "name": "Btn_Kiki",
+          "opacity": 0,
           "persistentUuid": "1df397f8-f626-4413-8d47-46afd74e52b3",
           "width": 0,
-          "x": 352,
-          "y": 161,
-          "zOrder": 5,
+          "x": 930,
+          "y": 735,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 142,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "KotakPesan",
-          "persistentUuid": "75b4cee1-0e03-4665-a498-8febbc40c294",
-          "width": 1231,
-          "x": 27,
-          "y": 20,
+          "name": "Btn",
+          "opacity": 0,
+          "persistentUuid": "2c69e122-5240-4bca-acd5-6fe0fecfead4",
+          "width": 0,
+          "x": 705,
+          "y": 310,
           "zOrder": 6,
           "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn",
+          "opacity": 0,
+          "persistentUuid": "e918edbf-cd17-448b-a1fd-fcde7582cc77",
+          "width": 0,
+          "x": 350,
+          "y": 310,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn",
+          "opacity": 0,
+          "persistentUuid": "d200d832-70df-4bd2-8253-9c4d90b88b39",
+          "width": 0,
+          "x": 0,
+          "y": 310,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Kiki",
+          "opacity": 0,
+          "persistentUuid": "210dca37-0842-4cb6-b499-a25bc71bd1de",
+          "width": 0,
+          "x": -170,
+          "y": 1100,
+          "zOrder": 30,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Peni",
+          "opacity": 0,
+          "persistentUuid": "d04be7d5-5db3-4320-9081-f98227a1bb00",
+          "width": 0,
+          "x": 105,
+          "y": 1100,
+          "zOrder": 30,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Ano",
+          "opacity": 0,
+          "persistentUuid": "1ecf8b0c-94d6-4433-9b70-e3575dba68e9",
+          "width": 0,
+          "x": 655,
+          "y": 1100,
+          "zOrder": 30,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_Rian",
+          "opacity": 0,
+          "persistentUuid": "20f81bf9-4bc8-4e38-bc4d-f1e3b62e96c4",
+          "width": 0,
+          "x": 930,
+          "y": 1100,
+          "zOrder": 30,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -84988,7 +87392,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.32169117647058865,
         "windowMask": false,
         "selectedLayer": ""
       }

@@ -1952,6 +1952,16 @@
         "name": "NewSprite7",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "main gameplay hutan bgm - ingat aku_[cut_322sec]2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "main gameplay hutan bgm - ingat aku_[cut_322sec]2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -3605,969 +3615,6 @@
   ],
   "layouts": [
     {
-      "b": 255,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "LoadingScene",
-      "name": "LoadingScene",
-      "r": 255,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 255,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridDepth": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridOffsetZ": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.5468750000000003,
-        "windowMask": false,
-        "selectedLayer": ""
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Memuat",
-          "persistentUuid": "edfc202c-e75d-497c-9289-65519f2da04d",
-          "width": 0,
-          "x": 590,
-          "y": 675,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Background",
-          "persistentUuid": "6f93e8d3-c3d2-4970-842e-8941d465ad76",
-          "width": 0,
-          "x": 0,
-          "y": 1,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Isi",
-          "persistentUuid": "c44b335d-5f4d-4573-843e-7563e4dbe584",
-          "width": 0,
-          "x": 0,
-          "y": 635,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 720,
-          "layer": "",
-          "name": "Transition",
-          "persistentUuid": "0c433255-6dfc-4865-89cf-567858e279b2",
-          "width": 1280,
-          "x": 0,
-          "y": 0,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Background",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 581.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 720
-                          },
-                          {
-                            "x": 0,
-                            "y": 720
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "Memuat",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "AutoTyping",
-              "type": "AutoTyping::AutoTyping",
-              "Text": "Text",
-              "Interval": 0.4,
-              "CharacterJustAdded": false,
-              "FullText": "",
-              "TypedText": ""
-            }
-          ],
-          "string": "Memuat...",
-          "font": "baloo.regular.ttf",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 107,
-            "g": 107,
-            "r": 167
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Memuat...",
-            "font": "baloo.regular.ttf",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "167;107;107"
-          }
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Isi",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Level",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite6",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 720
-                          },
-                          {
-                            "x": 0,
-                            "y": 720
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "1",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "1",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 720
-                          },
-                          {
-                            "x": 0,
-                            "y": 720
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "2",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "3",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 720
-                          },
-                          {
-                            "x": 0,
-                            "y": 720
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 0
-                          },
-                          {
-                            "x": 1280,
-                            "y": 720
-                          },
-                          {
-                            "x": 0,
-                            "y": 720
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "Background"
-          },
-          {
-            "objectName": "Memuat"
-          },
-          {
-            "objectName": "Isi"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Sound & Music"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "TransisiKe___",
-                    "=",
-                    "\"SelectLevel\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Isi",
-                    "Animation",
-                    "=",
-                    "\"Level\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
-                  },
-                  "parameters": [
-                    "Transition",
-                    "FlashTransitionPainter",
-                    "\"255;242;221\"",
-                    "1",
-                    "\"Circular\"",
-                    "\"Backward\"",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.25"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PrioritizeLoadingOfScene"
-                  },
-                  "parameters": [
-                    "TransisiKe___",
-                    "TransisiKe___"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "Isi",
-                    "Tween",
-                    "\"Loading\"",
-                    "90",
-                    "\"linear\"",
-                    "4",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "TransisiKe___",
-                    "=",
-                    "\"Level1 (Pengenalan)\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Isi",
-                    "Animation",
-                    "=",
-                    "\"1\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
-                  },
-                  "parameters": [
-                    "Transition",
-                    "FlashTransitionPainter",
-                    "\"200;191;247\"",
-                    "1",
-                    "\"Circular\"",
-                    "\"Backward\"",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.25"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PrioritizeLoadingOfScene"
-                  },
-                  "parameters": [
-                    "TransisiKe___",
-                    "TransisiKe___"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "Isi",
-                    "Tween",
-                    "\"Loading\"",
-                    "90",
-                    "\"linear\"",
-                    "4",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "TransisiKe___",
-                    "=",
-                    "\"Level2 (Pengenalan)\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Isi",
-                    "Animation",
-                    "=",
-                    "\"2\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
-                  },
-                  "parameters": [
-                    "Transition",
-                    "FlashTransitionPainter",
-                    "\"204;235;173\"",
-                    "1",
-                    "\"Circular\"",
-                    "\"Backward\"",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.25"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PrioritizeLoadingOfScene"
-                  },
-                  "parameters": [
-                    "TransisiKe___",
-                    "TransisiKe___"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "Isi",
-                    "Tween",
-                    "\"Loading\"",
-                    "90",
-                    "\"linear\"",
-                    "4",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "TransisiKe___",
-                    "=",
-                    "\"Level3 (Ingat Yang Lewat)\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Isi",
-                    "Animation",
-                    "=",
-                    "\"3\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
-                  },
-                  "parameters": [
-                    "Transition",
-                    "FlashTransitionPainter",
-                    "\"253;193;172\"",
-                    "1",
-                    "\"Circular\"",
-                    "\"Backward\"",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.25"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PrioritizeLoadingOfScene"
-                  },
-                  "parameters": [
-                    "TransisiKe___",
-                    "TransisiKe___"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "Isi",
-                    "Tween",
-                    "\"Loading\"",
-                    "90",
-                    "\"linear\"",
-                    "4",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Tween::HasFinished"
-              },
-              "parameters": [
-                "Isi",
-                "Tween",
-                "\"Loading\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::TweenCameraZoom2"
-              },
-              "parameters": [
-                "",
-                "\"Transisi\"",
-                "5",
-                "",
-                "\"easeOutQuad\"",
-                "0.85"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AreSceneAssetsLoaded"
-              },
-              "parameters": [
-                "",
-                "TransisiKe___"
-              ]
-            },
-            {
-              "type": {
-                "value": "CameraZoom"
-              },
-              "parameters": [
-                "",
-                "",
-                "0",
-                "=",
-                "5"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "TransisiKe___",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera2DPlaneMaxDrawingDistance": 5000,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Ambient Hemisphere Light",
-              "doubleParameters": {
-                "elevation": 40,
-                "intensity": 0.33,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "groundColor": "127;127;127",
-                "skyColor": "255;255;255",
-                "top": "Z+"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "AutoTyping",
-          "type": "AutoTyping::AutoTyping"
-        },
-        {
-          "name": "ButtonFSM",
-          "type": "ButtonStates::ButtonFSM"
-        },
-        {
-          "name": "ButtonScaleTween",
-          "type": "ButtonStates::ButtonScaleTween"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "FlashTransitionPainter",
-          "type": "FlashTransitionPainter::FlashTransitionPainter"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Text",
-          "type": "TextContainerCapability::TextContainerBehavior"
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ]
-    },
-    {
       "b": 209,
       "disableInputWhenNotFocused": true,
       "mangledName": "HomePage",
@@ -6047,6 +5094,969 @@
         {
           "name": "EllipseMovement",
           "type": "EllipseMovement::EllipseMovement"
+        },
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "b": 255,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "LoadingScene",
+      "name": "LoadingScene",
+      "r": 255,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 255,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.5468750000000003,
+        "windowMask": false,
+        "selectedLayer": ""
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Memuat",
+          "persistentUuid": "edfc202c-e75d-497c-9289-65519f2da04d",
+          "width": 0,
+          "x": 590,
+          "y": 675,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Background",
+          "persistentUuid": "6f93e8d3-c3d2-4970-842e-8941d465ad76",
+          "width": 0,
+          "x": 0,
+          "y": 1,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Isi",
+          "persistentUuid": "c44b335d-5f4d-4573-843e-7563e4dbe584",
+          "width": 0,
+          "x": 0,
+          "y": 635,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "",
+          "name": "Transition",
+          "persistentUuid": "0c433255-6dfc-4865-89cf-567858e279b2",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 581.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Memuat",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "AutoTyping",
+              "type": "AutoTyping::AutoTyping",
+              "Text": "Text",
+              "Interval": 0.4,
+              "CharacterJustAdded": false,
+              "FullText": "",
+              "TypedText": ""
+            }
+          ],
+          "string": "Memuat...",
+          "font": "baloo.regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 107,
+            "g": 107,
+            "r": 167
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Memuat...",
+            "font": "baloo.regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "167;107;107"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Isi",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Level",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite6",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "1",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Background"
+          },
+          {
+            "objectName": "Memuat"
+          },
+          {
+            "objectName": "Isi"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Sound & Music"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"SelectLevel\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Animation",
+                    "=",
+                    "\"Level\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"255;242;221\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Backward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "TransisiKe___"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Tween",
+                    "\"Loading\"",
+                    "90",
+                    "\"linear\"",
+                    "4",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"Level1 (Pengenalan)\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Animation",
+                    "=",
+                    "\"1\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"200;191;247\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Backward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "TransisiKe___"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Tween",
+                    "\"Loading\"",
+                    "90",
+                    "\"linear\"",
+                    "4",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"Level2 (Pengenalan)\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Animation",
+                    "=",
+                    "\"2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"204;235;173\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Backward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "TransisiKe___"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Tween",
+                    "\"Loading\"",
+                    "90",
+                    "\"linear\"",
+                    "4",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "=",
+                    "\"Level3 (Ingat Yang Lewat)\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Animation",
+                    "=",
+                    "\"3\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"253;193;172\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Backward\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "TransisiKe___",
+                    "TransisiKe___"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Isi",
+                    "Tween",
+                    "\"Loading\"",
+                    "90",
+                    "\"linear\"",
+                    "4",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "Isi",
+                "Tween",
+                "\"Loading\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"Transisi\"",
+                "5",
+                "",
+                "\"easeOutQuad\"",
+                "0.85"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AreSceneAssetsLoaded"
+              },
+              "parameters": [
+                "",
+                "TransisiKe___"
+              ]
+            },
+            {
+              "type": {
+                "value": "CameraZoom"
+              },
+              "parameters": [
+                "",
+                "",
+                "0",
+                "=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "TransisiKe___",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "AutoTyping",
+          "type": "AutoTyping::AutoTyping"
+        },
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
         },
         {
           "name": "FlashTransitionPainter",
@@ -9911,7 +9921,7 @@
               "parameters": [
                 "",
                 "main gameplay pesta bgm - ingat aku.wav",
-                "5",
+                "1",
                 "yes",
                 "",
                 ""
@@ -13559,7 +13569,7 @@
       "name": "Level1 (Kuis)",
       "r": 200,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 191,
       "uiSettings": {
@@ -24812,6 +24822,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "main gameplay hutan bgm - ingat aku_[cut_322sec]2.wav",
+                "1",
+                "yes",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ReadStringFromStorage"
               },
               "parameters": [
@@ -29320,7 +29343,7 @@
       "name": "Level2 (Kuis)",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -62900,6 +62923,72 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "6",
+                    "=",
+                    "GameStorage.Settings[1]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "7",
+                    "=",
+                    "GameStorage.Settings[1]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "16",
+                    "=",
+                    "GameStorage.Settings[1]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "11",
+                    "=",
+                    "GameStorage.Settings[1]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "14",
+                    "=",
+                    "GameStorage.Settings[1]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "18",
+                    "=",
+                    "GameStorage.Settings[1]"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ModVolumeMusicCanal"
